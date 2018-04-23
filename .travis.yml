@@ -2,7 +2,8 @@ language: python
 python:
   - "3.6"
 install: pip install -r requirements.txt
-scripts: ''
+scripts: 
+  - echo "Built"
 branches:
   only:
     - master
