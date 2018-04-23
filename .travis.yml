@@ -4,7 +4,8 @@ python:
 install: 
   - pip install -r requirements.txt
 script:
-  - python manage.py runserver --noinput
+  - python manage.py migrate --no-input
+  - python manage.py runserver --no-input
 branches:
   only:
     - master
