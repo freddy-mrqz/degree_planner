@@ -17,8 +17,6 @@ ALLOWED_HOSTS = []
 
 # Application definition
 DJANGO_APPS = [
-    # Django-CMS Admin
-    'djangocms_admin_style',
     # Core Django
     'django.contrib.admin',
     'django.contrib.auth',
@@ -28,18 +26,8 @@ DJANGO_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
 ]
-THIRD_PARTY_APPS = [
-    # Django-CMS Specific
-    'cms',
-    'menus',
-    'treebeard',
-    'sekizai',
-    'djangocms_text_ckeditor',
-    #Django-filer Specific
-    'filer',
-    'easy_thumbnails',
-    'mptt',
-]
+THIRD_PARTY_APPS = []
+
 LOCAL_APPS = []
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -53,12 +41,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # Django-CMS specific
-    'django.middleware.locale.LocaleMiddleware',
-    'cms.middleware.user.CurrentUserMiddleware',
-    'cms.middleware.page.CurrentPageMiddleware',
-    'cms.middleware.toolbar.ToolbarMiddleware',
-    'cms.middleware.language.LanguageCookieMiddleware',
 ]
 
 
@@ -83,9 +65,6 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                #Django-CMS specific
-                'sekizai.context_processors.sekizai',
-                'cms.context_processors.cms_settings',
             ],
         },
     },
@@ -165,24 +144,3 @@ STATICFILES_FINDERS = [
 MEDIA_ROOT = str(APPS_DIR('media'))
 # https://docs.djangoproject.com/en/dev/ref/settings/#media-url
 MEDIA_URL = '/media/'
-
-
-# Django-CMS configurations
-# http://docs.django-cms.org/en/latest/how_to/install.html#install-the-django-cms-package
-SITE_ID = 1
-
-CMS_TEMPLATES = [
-    ('base.html', 'base template'),
-]
-
-
-# Django-filer configurations
-# http://docs.django-cms.org/en/latest/how_to/install.html#install-the-django-cms-package
-THUMBNAIL_HIGH_RESOLUTION = True
-
-THUMBNAIL_PROCESSORS = (
-    'easy_thumbnails.processors.colorspace',
-    'easy_thumbnails.processors.autocrop',
-    'filer.thumbnail_processors.scale_and_crop_with_subject_location',
-    'easy_thumbnails.processors.filters'
-)

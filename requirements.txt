@@ -1,24 +1,7 @@
 # Django
-Django==1.11.12
+Django==2.0.4
 pytz==2018.4
 django-environ==0.4.4
-
-# Django-CMS
-djangocms-admin-style==1.2.8
-django-classy-tags==0.8.0
-django-cms==3.5.2
-djangocms-text-ckeditor==3.6.0
-django-formtools==2.1
-django-polymorphic==2.0.2
-django-sekizai==0.10.0
-django-treebeard==4.3
-html5lib==0.9999999
-
-# Django-filer
-django-filer==1.3.1
-django-mptt==0.8.7
-easy-thumbnails==2.5
-Pillow==5.1.0
 
 # Database-specific
 psycopg2==2.7.4
