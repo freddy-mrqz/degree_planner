@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/freddy-mrqz/degree_planner.svg?branch=master)](https://travis-ci.org/freddy-mrqz/degree_planner)
+
 # Depaul Graduate Degree Planner
 
 DGDP is a web application developed by a team of students in a software projects class. The app helps Computer Science or Information Systems graduate students plan out their Masters program path. Students may register, browse courses, create/store degree paths, and change majors/concentration if needed.
