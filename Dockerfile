@@ -10,4 +10,4 @@ RUN pip install -r /home/docker/requirements.txt
 
 WORKDIR /home/docker/degree_planner/
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+ENTRYPOINT ["./docker-entrypoint.sh"]

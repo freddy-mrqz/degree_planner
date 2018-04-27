@@ -6,6 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: degree_planner
+    command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - ./degree_planner:/home/docker/degree_planner
     working_dir: /home/docker/degree_planner
