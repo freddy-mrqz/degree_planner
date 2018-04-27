@@ -6,7 +6,8 @@ COPY requirements.txt /home/docker/requirements.txt
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 COPY scripts/ /home/docker/scripts
 
-
 RUN pip install -r /home/docker/requirements.txt
 
-CMD ["/home/docker/scripts/start_dev.sh"]
+WORKDIR /home/docker/degree_planner/
+
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
