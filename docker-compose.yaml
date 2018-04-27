@@ -9,7 +9,6 @@ services:
     volumes:
       - ./degree_planner:/home/docker/degree_planner
     working_dir: /home/docker/degree_planner
-    command: ["/home/docker/scripts/start_dev.sh"]
     ports:
       - "8000:8000"
   db:
