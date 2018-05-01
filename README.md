@@ -26,6 +26,12 @@ git clone https://github.com/freddy-mrqz/degree_planner.git
 pip install -r requirements.txt
 ```
 
+### Installing, Running and Development with Docker
+
+If you would prefer to use Docker, make use of the `Makefile` that is packaged with the repository. Running `make up_build` will start the application with its dependencies - all you need to do is edit the `src/` folder. When you are finished, run `make down`. 
+
+**Note: This replaces `mkvirtualenv`, and any other installation instructions. This is best used if you are familiar with Docker and docker-compose.***
+
 ### Running Locally
 
 Run the app's server to ensure the it has been installed correctly,
