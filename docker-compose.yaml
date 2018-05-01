@@ -10,7 +10,7 @@ services:
     volumes: 
       - ./src:/src 
     ports:
-      - "8000"
+      - "8000:8000"
   db:
     image: postgres:9.4
     container_name: postgres_db
