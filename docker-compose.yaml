@@ -6,7 +6,6 @@ services:
       context: .
       dockerfile: Dockerfile.local
     container_name: degree_planner
-    working_dir: /src/ 
     volumes: 
       - ./src:/src 
     ports:
