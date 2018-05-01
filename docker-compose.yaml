@@ -4,22 +4,20 @@ services:
   degree_planner:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.local
     container_name: degree_planner
-    command: python manage.py runserver 0.0.0.0:8000
-    volumes:
-      - ./degree_planner:/home/docker/degree_planner
-    working_dir: /home/docker/degree_planner
+    working_dir: /src/ 
+    volumes: 
+      - ./src:/src 
     ports:
-      - "8000:8000"
+      - "8000"
   db:
     image: postgres:9.4
     container_name: postgres_db
     volumes:
-     - degree_planner_data:/var/lib/postgresql/data
+     - degree_planner_data:/var/lib/postgresql/data/
     ports:
       - "5432:5432"
     hostname: postgres_db
 volumes:
   degree_planner_data:
-

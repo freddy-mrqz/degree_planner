@@ -1,0 +1,10 @@
+FROM python:3.6
+ENV PYTHONUNBUFFERED 1 
+ENV C_FORCE_ROOT true
+
+COPY ./src /src
+COPY ./docker-entrypoint.sh /docker-entrypoint.sh
+RUN pip install -r /src/requirements.txt
+
+ENTRYPOINT ["/docker-entrypoint.sh"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
