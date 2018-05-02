@@ -18,9 +18,9 @@ down:
 	docker-compose down --remove-orphans
 logs:
 	docker logs $(CONTAINER)
-exec_local:
-	docker run --rm -i -t degree_planner_local /bin/bash
 exec:
-	docker run --rm -i -t degree_planner /bin/bash
+	docker exec -i -t degree_planner /bin/bash
+shell:
+	docker exec -i -t degree_planner python manage.py shell_plus
 reset: down up_build
 	@echo "Restarting..."
