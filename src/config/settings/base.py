@@ -16,7 +16,7 @@ if READ_DOT_ENV_FILE:
     # OS environment variables take precedence over variables from .env
     env.read_env(str(ROOT_DIR.path('.env')))
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 SECRET_KEY = 'DJANGO_SECRET_KEY'
 
@@ -71,11 +71,12 @@ DJANGO_APPS = [
     'django.contrib.admin',
 ]
 THIRD_PARTY_APPS = [
-
+ 
 ]
 LOCAL_APPS = [
-
+    'planner',
 ]
+
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
