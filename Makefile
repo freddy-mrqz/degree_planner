@@ -1,8 +1,8 @@
-.PHONY: docker docker_local up up_d down logs
+.PHONY: build up up_d up_build up_build_d down logs exec shell 
 
 CONTAINER=degree_planner
 
-docker:
+build:
 	docker build -t degree_planner .
 up:
 	docker-compose up
@@ -11,7 +11,7 @@ up_build:
 up_build_d:
 	docker-compose up -d --build
 up_d:
-	docker-compose up -d	
+	docker-compose up -d
 down:
 	docker-compose down --remove-orphans
 logs:

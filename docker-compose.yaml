@@ -8,6 +8,7 @@ services:
     volumes: 
       - ./config:/home/docker/config
       - ./src:/home/docker/src 
+      - ./manage.py:/home/docker/manage.py
     ports:
       - "8000:8000"
   db:
