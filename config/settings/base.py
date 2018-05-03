@@ -43,7 +43,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'postgres',
         'USER': 'postgres',
         'HOST': 'db',
@@ -74,8 +74,8 @@ THIRD_PARTY_APPS = [
 
 ]
 LOCAL_APPS = [
-    'src.catalog',
-    'src.planner',
+    'planner.apps.PlannerConfig',
+    'catalog.apps.CatalogConfig',
 ]
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
