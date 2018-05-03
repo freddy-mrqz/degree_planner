@@ -4,8 +4,6 @@ CONTAINER=degree_planner
 
 docker:
 	docker build -t degree_planner .
-docker_local:
-	docker build -t degree_planner_local -f Dockerfile.local .
 up:
 	docker-compose up
 up_build:
