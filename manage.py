@@ -14,6 +14,6 @@ if __name__ == "__main__":
 		) from exc
 
 	current_path = os.path.dirname(os.path.abspath(__file__))
-	sys.path.append(os.path.join(current_path, "degree_planner"))
+	sys.path.append(os.path.join(current_path, 'src'))
 
 	execute_from_command_line(sys.argv)

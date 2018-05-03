@@ -1,11 +1,9 @@
-.PHONY: docker docker_local up up_d down logs
+.PHONY: build up up_d up_build up_build_d down logs exec shell 
 
 CONTAINER=degree_planner
 
-docker:
+build:
 	docker build -t degree_planner .
-docker_local:
-	docker build -t degree_planner_local -f Dockerfile.local .
 up:
 	docker-compose up
 up_build:
@@ -13,14 +11,14 @@ up_build:
 up_build_d:
 	docker-compose up -d --build
 up_d:
-	docker-compose up -d	
+	docker-compose up -d
 down:
 	docker-compose down --remove-orphans
 logs:
 	docker logs $(CONTAINER)
-exec_local:
-	docker run --rm -i -t degree_planner_local /bin/bash
 exec:
-	docker run --rm -i -t degree_planner /bin/bash
+	docker exec -i -t degree_planner /bin/bash
+shell:
+	docker exec -i -t degree_planner python manage.py shell_plus
 reset: down up_build
 	@echo "Restarting..."
