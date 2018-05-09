@@ -1,6 +1,6 @@
-from django.views.generic import DetailView
+from django.views.generic.base import TemplateView
 
 
-class IndexView(DetailView):
+class IndexView(TemplateView):
 
     template_name = "planner/planner_index.html"

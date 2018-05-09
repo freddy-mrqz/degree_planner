@@ -23,7 +23,7 @@ from planner.views import (
 )
 
 urlpatterns = [
-    path('', IndexView.as_view()),
+    path('planner/', IndexView.as_view()),
     path('courses/', CourseList.as_view(), name='course-list'),
     path('students/', StudentList.as_view(), name='student-list'),
 ]
