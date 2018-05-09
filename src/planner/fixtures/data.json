@@ -1,0 +1,2232 @@
+[
+  {
+    "4": 4,
+    "43": 44,
+    "400": 400,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "DISCRETE STRUCTURES FOR CS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation"
+  },
+  {
+    "4": 4,
+    "43": 95,
+    "400": 401,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "INTRODUCTION TO PROGRAMMING",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "An introduction to programming with a focus on problem solving, structured programming, and algorithm design with a gentle introduction to efficiency. Concepts covered include data types, expressions, variables, assignments, conditional and iterative stru"
+  },
+  {
+    "4": 4,
+    "43": 96,
+    "400": 401,
+    "901": 902,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "INTRODUCTION TO PROGRAMMING",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "An introduction to programming with a focus on problem solving, structured programming, and algorithm design with a gentle introduction to efficiency. Concepts covered include data types, expressions, variables, assignments, conditional and iterative stru"
+  },
+  {
+    "4": 4,
+    "43": 97,
+    "400": 401,
+    "901": 911,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "INTRODUCTION TO PROGRAMMING",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "An introduction to programming with a focus on problem solving, structured programming, and algorithm design with a gentle introduction to efficiency. Concepts covered include data types, expressions, variables, assignments, conditional and iterative stru"
+  },
+  {
+    "4": 4,
+    "43": 23,
+    "400": 402,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "DATA STRUCTURES I",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "A first course on data structures in Java for graduate students.  The course introduces Java programming from within the context of data structures. The course covers arrays, linked lists, stacks and queues, data structures supporting disjoint-set operati"
+  },
+  {
+    "4": 4,
+    "43": 24,
+    "400": 402,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "DATA STRUCTURES I",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "A first course on data structures in Java for graduate students.  The course introduces Java programming from within the context of data structures. The course covers arrays, linked lists, stacks and queues, data structures supporting disjoint-set operati"
+  },
+  {
+    "4": 4,
+    "43": 25,
+    "400": 403,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "DATA STRUCTURES II",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This is the second course on data structures in Java for graduate students. The course covers trees, heaps, associative arrays, hash tables, tries, and data structures for representing graphs. The implementation of the basic operations on each data struct"
+  },
+  {
+    "4": 4,
+    "43": 26,
+    "400": 403,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "DATA STRUCTURES II",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This is the second course on data structures in Java for graduate students. The course covers trees, heaps, associative arrays, hash tables, tries, and data structures for representing graphs. The implementation of the basic operations on each data struct"
+  },
+  {
+    "4": 4,
+    "43": 27,
+    "400": 403,
+    "901": 902,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "DATA STRUCTURES II",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This is the second course on data structures in Java for graduate students. The course covers trees, heaps, associative arrays, hash tables, tries, and data structures for representing graphs. The implementation of the basic operations on each data struct"
+  },
+  {
+    "4": 4,
+    "43": 195,
+    "400": 403,
+    "901": 901,
+    "CSC": "IT",
+    "Computer Science": "Information Technology",
+    "DISCRETE STRUCTURES FOR CS": "STATISTICS AND DATA ANALYSIS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Introduction to univariate data analysis methods. Descriptive statistics and data visualization methods. Overview of sampling techniques for data collection, and introduction to statistical inference methods for decision making including simple linear reg"
+  },
+  {
+    "4": 4,
+    "43": 196,
+    "400": 403,
+    "901": 910,
+    "CSC": "IT",
+    "Computer Science": "Information Technology",
+    "DISCRETE STRUCTURES FOR CS": "STATISTICS AND DATA ANALYSIS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Introduction to univariate data analysis methods. Descriptive statistics and data visualization methods. Overview of sampling techniques for data collection, and introduction to statistical inference methods for decision making including simple linear reg"
+  },
+  {
+    "4": 4,
+    "43": 0,
+    "400": 404,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "ACCELERATED C++",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This introductory graduate course covers the essentials of C++ programming. Topics include encapsulation, inheritance, polymorphism, dynamic memory allocation, casting, pointer arithmetic, operator overloading, templates, and the Standard Template Librari"
+  },
+  {
+    "4": 4,
+    "43": 1,
+    "400": 404,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "ACCELERATED C++",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This introductory graduate course covers the essentials of C++ programming. Topics include encapsulation, inheritance, polymorphism, dynamic memory allocation, casting, pointer arithmetic, operator overloading, templates, and the Standard Template Librari"
+  },
+  {
+    "4": 4,
+    "43": 201,
+    "400": 406,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "SYSTEMS I",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "An introductory graduate course on computer systems topics, focusing on machine-level programming and architecture and their relevance for application programming. Information representations, assembly language and debuggers, processor architecture, progr"
+  },
+  {
+    "4": 4,
+    "43": 202,
+    "400": 406,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "SYSTEMS I",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "An introductory graduate course on computer systems topics, focusing on machine-level programming and architecture and their relevance for application programming. Information representations, assembly language and debuggers, processor architecture, progr"
+  },
+  {
+    "4": 4,
+    "43": 221,
+    "400": 406,
+    "901": 901,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "WEB SITE DESIGN FOR HCI",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Web design introduced in a user-centered context. Application of visual design principles and common design patterns for web sites and mobile interfaces. Page markup using HTML and CSS addressing responsive web design, accessibility, and search engine opt"
+  },
+  {
+    "4": 4,
+    "43": 222,
+    "400": 406,
+    "901": 910,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "WEB SITE DESIGN FOR HCI",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Web design introduced in a user-centered context. Application of visual design principles and common design patterns for web sites and mobile interfaces. Page markup using HTML and CSS addressing responsive web design, accessibility, and search engine opt"
+  },
+  {
+    "4": 4,
+    "43": 203,
+    "400": 407,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "SYSTEMS II",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "An introductory graduate course on computer systems topics, focusing on operating systems components and their relevance for application programming. Linking, processes, virtual memory, dynamic memory allocation, system level I/O, networking and network p"
+  },
+  {
+    "4": 4,
+    "43": 204,
+    "400": 407,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "SYSTEMS II",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "An introductory graduate course on computer systems topics, focusing on operating systems components and their relevance for application programming. Linking, processes, virtual memory, dynamic memory allocation, system level I/O, networking and network p"
+  },
+  {
+    "4": 4,
+    "43": 180,
+    "400": 411,
+    "901": 901,
+    "CSC": "IT",
+    "Computer Science": "Information Technology",
+    "DISCRETE STRUCTURES FOR CS": "SCRIPTING FOR INTERACTIVE SYS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Introductory scripting for developing interactive web pages. Overview of HTML and CSS. Elementary programming concepts using JavaScript for learning control structures, functions, arrays, and object use. User interface development concepts include event"
+  },
+  {
+    "4": 4,
+    "43": 181,
+    "400": 411,
+    "901": 910,
+    "CSC": "IT",
+    "Computer Science": "Information Technology",
+    "DISCRETE STRUCTURES FOR CS": "SCRIPTING FOR INTERACTIVE SYS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Introductory scripting for developing interactive web pages. Overview of HTML and CSS. Elementary programming concepts using JavaScript for learning control structures, functions, arrays, and object use. User interface development concepts include event"
+  },
+  {
+    "4": 4,
+    "43": 7,
+    "400": 421,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "APPLIED ALGORITHMS AND STRUCTU",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This course covers techniques for designing and analyzing algorithms and structures in the context of computer application development. Examples will come from Internet, WWW, database, and computer system applications. Fundamental topics such as running-t"
+  },
+  {
+    "4": 4,
+    "43": 8,
+    "400": 421,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "APPLIED ALGORITHMS AND STRUCTU",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This course covers techniques for designing and analyzing algorithms and structures in the context of computer application development. Examples will come from Internet, WWW, database, and computer system applications. Fundamental topics such as running-t"
+  },
+  {
+    "4": 4,
+    "43": 199,
+    "400": 421,
+    "901": 901,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "SYSTEMS ANALYSIS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Course focus is on both traditional and object oriented systems analysis, with an emphasis upon developing competency in a wide range of modeling techniques.  Specific topics include: overview of the software development environment and project management"
+  },
+  {
+    "4": 4,
+    "43": 200,
+    "400": 421,
+    "901": 910,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "SYSTEMS ANALYSIS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Course focus is on both traditional and object oriented systems analysis, with an emphasis upon developing competency in a wide range of modeling techniques.  Specific topics include: overview of the software development environment and project management"
+  },
+  {
+    "4": 4,
+    "43": 197,
+    "400": 422,
+    "901": 901,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "SYSTEM DESIGN IMPL & MAINT",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Course focus is on both traditional and object oriented systems design.  Specific topics include: database design, including logical and physical design; Entity-Relationship diagrams, class diagrams,  form and report design; interface and dialogue design;"
+  },
+  {
+    "4": 4,
+    "43": 198,
+    "400": 422,
+    "901": 910,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "SYSTEM DESIGN IMPL & MAINT",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Course focus is on both traditional and object oriented systems design.  Specific topics include: database design, including logical and physical design; Entity-Relationship diagrams, class diagrams,  form and report design; interface and dialogue design;"
+  },
+  {
+    "4": 4,
+    "43": 20,
+    "400": 423,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "DATA ANALYSIS AND REGRESSION",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Multiple regression and correlation, residual analysis, analysis of variance, and robustness. These topics will be studied from a data analytic perspective, supported by an investigation of available statistical software.  PREREQUISITE(S): IT 403"
+  },
+  {
+    "4": 4,
+    "43": 21,
+    "400": 423,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "DATA ANALYSIS AND REGRESSION",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Multiple regression and correlation, residual analysis, analysis of variance, and robustness. These topics will be studied from a data analytic perspective, supported by an investigation of available statistical software.  PREREQUISITE(S): IT 403"
+  },
+  {
+    "4": 4,
+    "43": 22,
+    "400": 423,
+    "901": 902,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "DATA ANALYSIS AND REGRESSION",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Multiple regression and correlation, residual analysis, analysis of variance, and robustness. These topics will be studied from a data analytic perspective, supported by an investigation of available statistical software.  PREREQUISITE(S): IT 403"
+  },
+  {
+    "4": 4,
+    "43": 2,
+    "400": 424,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "ADVANCED DATA ANALYSIS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "The course will teach advanced statistical techniques to discover information from large sets of data.  The course topics include visualization techniques to summarize and display high dimensional data, dimensional reduction techniques such as principal c"
+  },
+  {
+    "4": 4,
+    "43": 3,
+    "400": 424,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "ADVANCED DATA ANALYSIS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "The course will teach advanced statistical techniques to discover information from large sets of data.  The course topics include visualization techniques to summarize and display high dimensional data, dimensional reduction techniques such as principal c"
+  },
+  {
+    "4": 4,
+    "43": 53,
+    "400": 424,
+    "901": 901,
+    "CSC": "ECT",
+    "Computer Science": "E-Commerce Technology",
+    "DISCRETE STRUCTURES FOR CS": "ENTERPRISE INFRASTRUCTURE",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Introduction to modern infrastructure and the evolving technology environment.  Major topics include: computer networks, Internet infrastructure, Web 2.0, Enterprise 2.0, social media and networking, software as a service, content management systems, clou"
+  },
+  {
+    "4": 4,
+    "43": 54,
+    "400": 424,
+    "901": 910,
+    "CSC": "ECT",
+    "Computer Science": "E-Commerce Technology",
+    "DISCRETE STRUCTURES FOR CS": "ENTERPRISE INFRASTRUCTURE",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Introduction to modern infrastructure and the evolving technology environment.  Major topics include: computer networks, Internet infrastructure, Web 2.0, Enterprise 2.0, social media and networking, software as a service, content management systems, clou"
+  },
+  {
+    "4": 4,
+    "43": 63,
+    "400": 430,
+    "901": 901,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "FUNDAMENTALS OF IT PROJECT MGT",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This course concentrates on monitoring, managing and controlling assets and resources on a single IT project.  Topics covered are risk management; procurement and contract management; time and cost estimating; controlling and tracking techniques; quality"
+  },
+  {
+    "4": 4,
+    "43": 64,
+    "400": 430,
+    "901": 910,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "FUNDAMENTALS OF IT PROJECT MGT",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This course concentrates on monitoring, managing and controlling assets and resources on a single IT project.  Topics covered are risk management; procurement and contract management; time and cost estimating; controlling and tracking techniques; quality"
+  },
+  {
+    "4": 4,
+    "43": 144,
+    "400": 430,
+    "901": 901,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "PROTOTYPING AND IMPLEMENTATION",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Overview of prototyping methods ranging from low-fidelity to interactive script-based prototypes.  Analysis of prototyping tools and their relative advantages.  Projects include prototype  development over multiple iterations using a variety of strategies"
+  },
+  {
+    "4": 4,
+    "43": 145,
+    "400": 430,
+    "901": 910,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "PROTOTYPING AND IMPLEMENTATION",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Overview of prototyping methods ranging from low-fidelity to interactive script-based prototypes.  Analysis of prototyping tools and their relative advantages.  Projects include prototype  development over multiple iterations using a variety of strategies"
+  },
+  {
+    "4": 4,
+    "43": 185,
+    "400": 433,
+    "901": 901,
+    "CSC": "SE",
+    "Computer Science": "Software Engineering",
+    "DISCRETE STRUCTURES FOR CS": "SFTWR TESTING & QUALITY ASSRN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This course is designed for the software engineering professional to gain a greater understanding of the key ingredients in creating and/or managing a successful testing program to meet project needs.  Topics covered include test lifecycle planning, test"
+  },
+  {
+    "4": 4,
+    "43": 186,
+    "400": 433,
+    "901": 910,
+    "CSC": "SE",
+    "Computer Science": "Software Engineering",
+    "DISCRETE STRUCTURES FOR CS": "SFTWR TESTING & QUALITY ASSRN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This course is designed for the software engineering professional to gain a greater understanding of the key ingredients in creating and/or managing a successful testing program to meet project needs.  Topics covered include test lifecycle planning, test"
+  },
+  {
+    "4": 4,
+    "43": 45,
+    "400": 435,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "DISTRIBUTED SYSTEMS I",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "An introduction to distributed systems. Topics may include: architecture of distributed systems; networking; datagram-oriented and stream-oriented protocols; network programming (for example, the sockets API); remote procedure call and remote method invoc"
+  },
+  {
+    "4": 4,
+    "43": 46,
+    "400": 435,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "DISTRIBUTED SYSTEMS I",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "An introduction to distributed systems. Topics may include: architecture of distributed systems; networking; datagram-oriented and stream-oriented protocols; network programming (for example, the sockets API); remote procedure call and remote method invoc"
+  },
+  {
+    "4": 4,
+    "43": 136,
+    "400": 435,
+    "901": 901,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "ORGANIZATIONAL MODELING",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "The course explores contemporary approaches to analyzing and modeling organizational problems, processes, workflow, users and data.  The emphasis is on the initial stages of analysis where the root cause of problems are identified, formulated and modeled."
+  },
+  {
+    "4": 4,
+    "43": 137,
+    "400": 435,
+    "901": 910,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "ORGANIZATIONAL MODELING",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "The course explores contemporary approaches to analyzing and modeling organizational problems, processes, workflow, users and data.  The emphasis is on the initial stages of analysis where the root cause of problems are identified, formulated and modeled."
+  },
+  {
+    "4": 4,
+    "43": 93,
+    "400": 440,
+    "901": 901,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "INTRO TO USER-CENTERED DESIGN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "The user-interface development process. Introduction to methods for practicing user-centered design including user and task analysis, user interface design principles and testing using low-fidelity prototypes. Students may not receive credit for this cour"
+  },
+  {
+    "4": 4,
+    "43": 94,
+    "400": 440,
+    "901": 910,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "INTRO TO USER-CENTERED DESIGN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "The user-interface development process. Introduction to methods for practicing user-centered design including user and task analysis, user interface design principles and testing using low-fidelity prototypes. Students may not receive credit for this cour"
+  },
+  {
+    "4": 4,
+    "43": 98,
+    "400": 444,
+    "901": 901,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "IT AUDITING",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Management and boards continue to recognize the importance of effectively managing information technology (IT) assets - to meet business objectives and to thoughtfully manage IT related business risks.  This course examines the key principles related to a"
+  },
+  {
+    "4": 4,
+    "43": 99,
+    "400": 444,
+    "901": 910,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "IT AUDITING",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Management and boards continue to recognize the importance of effectively managing information technology (IT) assets - to meet business objectives and to thoughtfully manage IT related business risks.  This course examines the key principles related to a"
+  },
+  {
+    "4": 4,
+    "43": 140,
+    "400": 447,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "PROGRAM LANGUAGE CONCEPTS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Programming paradigms and language concepts: functional programming; comparison of object-oriented languages; type systems for functional and object-oriented languages; runtime systems for functional and object-oriented languages.  A variety of programmin"
+  },
+  {
+    "4": 4,
+    "43": 141,
+    "400": 447,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "PROGRAM LANGUAGE CONCEPTS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Programming paradigms and language concepts: functional programming; comparison of object-oriented languages; type systems for functional and object-oriented languages; runtime systems for functional and object-oriented languages.  A variety of programmin"
+  },
+  {
+    "4": 4,
+    "43": 59,
+    "400": 450,
+    "901": 901,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "FOUNDATIONS OF HCI",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Application of engineering and psychological theory to the design of computer systems. Overview of applicable research methods and research on perception, cognition, errors, and screen design. Attention will be given to creating and applying guidelines de"
+  },
+  {
+    "4": 4,
+    "43": 60,
+    "400": 450,
+    "901": 910,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "FOUNDATIONS OF HCI",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Application of engineering and psychological theory to the design of computer systems. Overview of applicable research methods and research on perception, cognition, errors, and screen design. Attention will be given to creating and applying guidelines de"
+  },
+  {
+    "4": 4,
+    "43": 128,
+    "400": 450,
+    "901": 901,
+    "CSC": "SE",
+    "Computer Science": "Software Engineering",
+    "DISCRETE STRUCTURES FOR CS": "OBJ-ORIENTED SOFTWARE DEV",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Principle, techniques and tools of object-oriented modeling, design, implementation, and testing of large-scale software systems.  Topics include design patterns, application frameworks, architectural design, and the applications in the software developme"
+  },
+  {
+    "4": 4,
+    "43": 129,
+    "400": 450,
+    "901": 910,
+    "CSC": "SE",
+    "Computer Science": "Software Engineering",
+    "DISCRETE STRUCTURES FOR CS": "OBJ-ORIENTED SOFTWARE DEV",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Principle, techniques and tools of object-oriented modeling, design, implementation, and testing of large-scale software systems.  Topics include design patterns, application frameworks, architectural design, and the applications in the software developme"
+  },
+  {
+    "4": 4,
+    "43": 130,
+    "400": 450,
+    "901": 902,
+    "CSC": "SE",
+    "Computer Science": "Software Engineering",
+    "DISCRETE STRUCTURES FOR CS": "OBJ-ORIENTED SOFTWARE DEV",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Principle, techniques and tools of object-oriented modeling, design, implementation, and testing of large-scale software systems.  Topics include design patterns, application frameworks, architectural design, and the applications in the software developme"
+  },
+  {
+    "4": 4,
+    "43": 131,
+    "400": 450,
+    "901": 911,
+    "CSC": "SE",
+    "Computer Science": "Software Engineering",
+    "DISCRETE STRUCTURES FOR CS": "OBJ-ORIENTED SOFTWARE DEV",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Principle, techniques and tools of object-oriented modeling, design, implementation, and testing of large-scale software systems.  Topics include design patterns, application frameworks, architectural design, and the applications in the software developme"
+  },
+  {
+    "4": 4,
+    "43": 30,
+    "400": 451,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "DATABASE DESIGN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Requirement analysis, conceptual design, logical design and implementation of relational databases. Emphasis will be on E-R modeling and E-R mapping, along with basic normalization and SQL for database implementation.   PREREQUISITE(S): None"
+  },
+  {
+    "4": 4,
+    "43": 31,
+    "400": 451,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "DATABASE DESIGN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Requirement analysis, conceptual design, logical design and implementation of relational databases. Emphasis will be on E-R modeling and E-R mapping, along with basic normalization and SQL for database implementation.   PREREQUISITE(S): None"
+  },
+  {
+    "4": 4,
+    "43": 13,
+    "400": 452,
+    "901": 920,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "BIG DATA & THE INTERNET OF THI",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This course surveys system design concepts, techniques, and algorithms in Machine to Machine (M2M), Internet of Things (IoT), and Internet of Everything (IoE). Topics covered include system architecture for big data, sensors and embedded technologies, IoT"
+  },
+  {
+    "4": 4,
+    "43": 32,
+    "400": 452,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "DATABASE PROGRAMMING",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Programming in a large-scale relational database environment using procedural languages. Topics covered in the course include: procedural extension of query languages, runtime error handling, subprograms (procedures and functions), packages, database trig"
+  },
+  {
+    "4": 4,
+    "43": 33,
+    "400": 452,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "DATABASE PROGRAMMING",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Programming in a large-scale relational database environment using procedural languages. Topics covered in the course include: procedural extension of query languages, runtime error handling, subprograms (procedures and functions), packages, database trig"
+  },
+  {
+    "4": 4,
+    "43": 132,
+    "400": 452,
+    "901": 901,
+    "CSC": "SE",
+    "Computer Science": "Software Engineering",
+    "DISCRETE STRUCTURES FOR CS": "OBJECT-ORIENTD ENTRPRS COMPUTG",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This course focuses on applying object-oriented techniques in the design, development, and integration of server-side enterprise  applications using technologies such as servlets, Java Server Pages,  and JDBC. Topics include web applications, multi-tier a"
+  },
+  {
+    "4": 4,
+    "43": 133,
+    "400": 452,
+    "901": 910,
+    "CSC": "SE",
+    "Computer Science": "Software Engineering",
+    "DISCRETE STRUCTURES FOR CS": "OBJECT-ORIENTD ENTRPRS COMPUTG",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This course focuses on applying object-oriented techniques in the design, development, and integration of server-side enterprise  applications using technologies such as servlets, Java Server Pages,  and JDBC. Topics include web applications, multi-tier a"
+  },
+  {
+    "4": 4,
+    "43": 34,
+    "400": 453,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "DATABASE TECHNOLOGIES",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "A core graduate course in database design and implementation.  Topics include database implementation and queries in SQL, logical design or relational databases, storage and indexes, database programming, and emerging database models.  PREREQUISITE(S): CS"
+  },
+  {
+    "4": 4,
+    "43": 35,
+    "400": 453,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "DATABASE TECHNOLOGIES",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "A core graduate course in database design and implementation.  Topics include database implementation and queries in SQL, logical design or relational databases, storage and indexes, database programming, and emerging database models.  PREREQUISITE(S): CS"
+  },
+  {
+    "4": 4,
+    "43": 36,
+    "400": 453,
+    "901": 902,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "DATABASE TECHNOLOGIES",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "A core graduate course in database design and implementation.  Topics include database implementation and queries in SQL, logical design or relational databases, storage and indexes, database programming, and emerging database models.  PREREQUISITE(S): CS"
+  },
+  {
+    "4": 4,
+    "43": 37,
+    "400": 453,
+    "901": 911,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "DATABASE TECHNOLOGIES",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "A core graduate course in database design and implementation.  Topics include database implementation and queries in SQL, logical design or relational databases, storage and indexes, database programming, and emerging database models.  PREREQUISITE(S): CS"
+  },
+  {
+    "4": 4,
+    "43": 102,
+    "400": 454,
+    "901": 901,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "IX DESIGN AND INFO ARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Information architecture and interactive page design. Perception and use of menus, labels and user controls. Structuring information for navigation and presentation. Selecting and placing user controls for optimizing task flow on pages and across pages. C"
+  },
+  {
+    "4": 4,
+    "43": 103,
+    "400": 454,
+    "901": 910,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "IX DESIGN AND INFO ARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Information architecture and interactive page design. Perception and use of menus, labels and user controls. Structuring information for navigation and presentation. Selecting and placing user controls for optimizing task flow on pages and across pages. C"
+  },
+  {
+    "4": 4,
+    "43": 38,
+    "400": 455,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "DATABASES FOR ANALYTICS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "The course covers core concepts of database systems with focus on applications in large-scale analytics. Topics include relational databases, scheme normalization, SQL queries for data integration and data cleaning, database programming for ETL, and nontr"
+  },
+  {
+    "4": 4,
+    "43": 39,
+    "400": 455,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "DATABASES FOR ANALYTICS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "The course covers core concepts of database systems with focus on applications in large-scale analytics. Topics include relational databases, scheme normalization, SQL queries for data integration and data cleaning, database programming for ETL, and nontr"
+  },
+  {
+    "4": 4,
+    "43": 49,
+    "400": 455,
+    "901": 901,
+    "CSC": "ECT",
+    "Computer Science": "E-Commerce Technology",
+    "DISCRETE STRUCTURES FOR CS": "E-COMMERCE WEB SITE ENGINEERNG",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "(Formerly ECT 555, cross-listed with HCI 513) An introduction to Web site engineering methods and processes to support e-commerce development.  Web site engineering life cycle and user-centered design, including site goals,  business models, value proposi"
+  },
+  {
+    "4": 4,
+    "43": 50,
+    "400": 455,
+    "901": 910,
+    "CSC": "ECT",
+    "Computer Science": "E-Commerce Technology",
+    "DISCRETE STRUCTURES FOR CS": "E-COMMERCE WEB SITE ENGINEERNG",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "(Formerly ECT 555, cross-listed with HCI 513) An introduction to Web site engineering methods and processes to support e-commerce development.  Web site engineering life cycle and user-centered design, including site goals,  business models, value proposi"
+  },
+  {
+    "4": 4,
+    "43": 51,
+    "400": 455,
+    "901": 901,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "ELECTRONIC BUSINESS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "An introduction to electronic business. The topics include business models, technologies, business and social impact of e-business.  It explores the to skills, business and social implications of emerging electronic business.  In addition to acquiring"
+  },
+  {
+    "4": 4,
+    "43": 52,
+    "400": 455,
+    "901": 910,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "ELECTRONIC BUSINESS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "An introduction to electronic business. The topics include business models, technologies, business and social impact of e-business.  It explores the to skills, business and social implications of emerging electronic business.  In addition to acquiring"
+  },
+  {
+    "4": 4,
+    "43": 182,
+    "400": 457,
+    "901": 901,
+    "CSC": "SE",
+    "Computer Science": "Software Engineering",
+    "DISCRETE STRUCTURES FOR CS": "SERVICE-ORIENTED ARCHITECTURE",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "An in-depth study of service oriented architecture (SOA) from the business, architectural, and technology perspectives. The business perspective will explain the imperatives behind SOA and discuss the significance of SOA in industry. The architectural per"
+  },
+  {
+    "4": 4,
+    "43": 183,
+    "400": 457,
+    "901": 910,
+    "CSC": "SE",
+    "Computer Science": "Software Engineering",
+    "DISCRETE STRUCTURES FOR CS": "SERVICE-ORIENTED ARCHITECTURE",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "An in-depth study of service oriented architecture (SOA) from the business, architectural, and technology perspectives. The business perspective will explain the imperatives behind SOA and discuss the significance of SOA in industry. The architectural per"
+  },
+  {
+    "4": 4,
+    "43": 215,
+    "400": 460,
+    "901": 901,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "USABILITY EVALUATION METHODS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Survey of evaluation methods that can be applied to user interfaces. Methods include expert inspections, walkthroughs, usability testing and analytical approaches. Students evaluate existing systems by applying some of these methods. PREREQUISITE(S): IT 4"
+  },
+  {
+    "4": 4,
+    "43": 216,
+    "400": 460,
+    "901": 910,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "USABILITY EVALUATION METHODS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Survey of evaluation methods that can be applied to user interfaces. Methods include expert inspections, walkthroughs, usability testing and analytical approaches. Students evaluate existing systems by applying some of these methods. PREREQUISITE(S): IT 4"
+  },
+  {
+    "4": 4,
+    "43": 134,
+    "400": 461,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "OPTIMIZED C++",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Analysis and implementation techniques to improve the performance and resource usage of C++ programs. This class will provide low level understanding of C++'s internal behavior that can be exploited to create faster performing software. Analysis of existi"
+  },
+  {
+    "4": 4,
+    "43": 135,
+    "400": 461,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "OPTIMIZED C++",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Analysis and implementation techniques to improve the performance and resource usage of C++ programs. This class will provide low level understanding of C++'s internal behavior that can be exploited to create faster performing software. Analysis of existi"
+  },
+  {
+    "4": 4,
+    "43": 28,
+    "400": 465,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "DATA VISUALIZATION",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "An introduction to data visualization techniques to enhance the exploration and analysis of large data sets from a wide range of fields including commercial, financial, medical, scientific and engineering applications. Topics include visual encoding of nu"
+  },
+  {
+    "4": 4,
+    "43": 29,
+    "400": 465,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "DATA VISUALIZATION",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "An introduction to data visualization techniques to enhance the exploration and analysis of large data sets from a wide range of fields including commercial, financial, medical, scientific and engineering applications. Topics include visual encoding of nu"
+  },
+  {
+    "4": 4,
+    "43": 61,
+    "400": 467,
+    "901": 910,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "FUNDAMENTALS OF DATA SCIENCE",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "An introduction to the Knowledge Discovery Technologies covering all stages of a data mining process: domain understanding, data collection and selection, data cleaning and transformation, dimensionality reduction, pattern discovery, evaluation, and knowl"
+  },
+  {
+    "4": 4,
+    "43": 62,
+    "400": 467,
+    "901": 901,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "FUNDAMENTALS OF DATA SCIENCE",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "An introduction to the Knowledge Discovery Technologies covering all stages of a data mining process: domain understanding, data collection and selection, data cleaning and transformation, dimensionality reduction, pattern discovery, evaluation, and knowl"
+  },
+  {
+    "4": 4,
+    "43": 41,
+    "400": 470,
+    "901": 901,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "DIGITAL DESIGN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Focus on the visual aspects of interfaces for information and communication technologies (ICTs). Evaluate, critique and create ICT interfaces using design principles. Learn to choose color, type, layout and imagery to create aesthetic and usable ICT inter"
+  },
+  {
+    "4": 4,
+    "43": 42,
+    "400": 470,
+    "901": 910,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "DIGITAL DESIGN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Focus on the visual aspects of interfaces for information and communication technologies (ICTs). Evaluate, critique and create ICT interfaces using design principles. Learn to choose color, type, layout and imagery to create aesthetic and usable ICT inter"
+  },
+  {
+    "4": 4,
+    "43": 191,
+    "400": 477,
+    "901": 901,
+    "CSC": "SE",
+    "Computer Science": "Software Engineering",
+    "DISCRETE STRUCTURES FOR CS": "SOFTWARE/SYSTMS PROJ MGMT",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Project Management is presented from a practitioner's view.  The four basic building blocks of software project management: people, process, to and measurements are covered.  Special emphasis is placed on professional standards such as the Project Man"
+  },
+  {
+    "4": 4,
+    "43": 192,
+    "400": 477,
+    "901": 910,
+    "CSC": "SE",
+    "Computer Science": "Software Engineering",
+    "DISCRETE STRUCTURES FOR CS": "SOFTWARE/SYSTMS PROJ MGMT",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Project Management is presented from a practitioner's view.  The four basic building blocks of software project management: people, process, to and measurements are covered.  Special emphasis is placed on professional standards such as the Project Man"
+  },
+  {
+    "4": 4,
+    "43": 142,
+    "400": 478,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "PROGRAMMING MACHINE LEARNING A",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "The course will focus on the implementations of various data mining and machine learning techniques using a high-level programming language.  Students will have hands on experience developing both supervised and unsupervised machine learning algorithms an"
+  },
+  {
+    "4": 4,
+    "43": 143,
+    "400": 478,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "PROGRAMMING MACHINE LEARNING A",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "The course will focus on the implementations of various data mining and machine learning techniques using a high-level programming language.  Students will have hands on experience developing both supervised and unsupervised machine learning algorithms an"
+  },
+  {
+    "4": 4,
+    "43": 11,
+    "400": 480,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "ARTIFICIAL INTELLIGENCE I",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "An in-depth survey of important concepts, problems, and techniques in artificial intelligence, including search, knowledge representation, logical reasoning, and reasoning with uncertainty.  A particular focus and a unifying theme of the course will be th"
+  },
+  {
+    "4": 4,
+    "43": 12,
+    "400": 480,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "ARTIFICIAL INTELLIGENCE I",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "An in-depth survey of important concepts, problems, and techniques in artificial intelligence, including search, knowledge representation, logical reasoning, and reasoning with uncertainty.  A particular focus and a unifying theme of the course will be th"
+  },
+  {
+    "4": 4,
+    "43": 152,
+    "400": 482,
+    "901": 910,
+    "CSC": "SE",
+    "Computer Science": "Software Engineering",
+    "DISCRETE STRUCTURES FOR CS": "REQUIREMENTS ENGINEERING",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Requirements Engineering (RE) plays a critical role in the software development process.  This course will introduce related vocabulary, concepts, and techniques, and will examine the role of RE in software and systems engineering.  The course will cover"
+  },
+  {
+    "4": 4,
+    "43": 148,
+    "400": 486,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "REAL-TIME NETWORKING",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Applied real-time networking fundamentals. Topics include low-level TCP/UDP socket programming, serialization of data for network transportation, deterministic data flow and queuing in applications, dynamic configuration and session communications. Studen"
+  },
+  {
+    "4": 4,
+    "43": 149,
+    "400": 486,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "REAL-TIME NETWORKING",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Applied real-time networking fundamentals. Topics include low-level TCP/UDP socket programming, serialization of data for network transportation, deterministic data flow and queuing in applications, dynamic configuration and session communications. Studen"
+  },
+  {
+    "4": 4,
+    "43": 123,
+    "400": 491,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "MOBILE APP DEVELOPMENT IOS II",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This course will cover advanced topics in mobile application development for iOS. The topics covered will be made explicit by the course instructor when the course is offered.  PREREQUISITE(S): CSC 471"
+  },
+  {
+    "4": 4,
+    "43": 124,
+    "400": 491,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "MOBILE APP DEVELOPMENT IOS II",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This course will cover advanced topics in mobile application development for iOS. The topics covered will be made explicit by the course instructor when the course is offered.  PREREQUISITE(S): CSC 471"
+  },
+  {
+    "4": 4,
+    "43": 187,
+    "400": 495,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "SOCIAL NETWORK ANALYSIS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This course is an introduction to the concepts and methods of social network analysis. Students will learn to extract and manage data about network structure and dynamics, and to analyze, model and visualize such data. Students will use software tools to"
+  },
+  {
+    "4": 4,
+    "43": 188,
+    "400": 495,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "SOCIAL NETWORK ANALYSIS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This course is an introduction to the concepts and methods of social network analysis. Students will learn to extract and manage data about network structure and dynamics, and to analyze, model and visualize such data. Students will use software tools to"
+  },
+  {
+    "4": 4,
+    "43": 89,
+    "400": 500,
+    "901": 910,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "INFO TECHNOLOGY LEADERSHIP",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Managing people ethically and effectively by applying a broad range of creative approaches to individual and team leadership within an Information Technology context.  Leadership methods studied include trait-based, skills-based, situational, contingency"
+  },
+  {
+    "4": 4,
+    "43": 90,
+    "400": 500,
+    "901": 901,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "INFO TECHNOLOGY LEADERSHIP",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Managing people ethically and effectively by applying a broad range of creative approaches to individual and team leadership within an Information Technology context.  Leadership methods studied include trait-based, skills-based, situational, contingency"
+  },
+  {
+    "4": 2,
+    "43": 162,
+    "400": 500,
+    "901": 601,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESEARCH COLLOQUIUM",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "The research colloquium consists of weekly talks by a variety of speakers including faculty, students, and guests from the academic and business communities.  The lectures feature new creative and scholarly works that encompass the disciplines and areas o"
+  },
+  {
+    "4": 2,
+    "43": 163,
+    "400": 500,
+    "901": 610,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESEARCH COLLOQUIUM",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "The research colloquium consists of weekly talks by a variety of speakers including faculty, students, and guests from the academic and business communities.  The lectures feature new creative and scholarly works that encompass the disciplines and areas o"
+  },
+  {
+    "4": 4,
+    "43": 14,
+    "400": 505,
+    "901": 901,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "BUS CONTNTY/DISASTR REC T & S",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This course focuses on the knowledge necessary for an organization to prepare for a variety of major disruptions (floods, earthquakes, terrorist attacks, etc.).  The goal is survival of the organization and its daily workflow despite major disruption.  St"
+  },
+  {
+    "4": 4,
+    "43": 15,
+    "400": 505,
+    "901": 910,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "BUS CONTNTY/DISASTR REC T & S",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This course focuses on the knowledge necessary for an organization to prepare for a variety of major disruptions (floods, earthquakes, terrorist attacks, etc.).  The goal is survival of the organization and its daily workflow despite major disruption.  St"
+  },
+  {
+    "4": 4,
+    "43": 40,
+    "400": 515,
+    "901": 901,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "DESIGN ETHNOGRAPHY",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This discussion course focuses on topics related to ethnographic methods such as activity theory, value sensitive design, online ethnography and reflexivity.  Students will conduct participatory observations, interviews, and diary studies (all methods des"
+  },
+  {
+    "4": 4,
+    "43": 104,
+    "400": 520,
+    "901": 901,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "LEARNER-CENTERED DESIGN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Design and evaluation of technology-based learning systems. Theories and models of human perception and cognition as they apply to learning, instruction and training. Application of established principles for analyzing and designing learning systems. Proj"
+  },
+  {
+    "4": 4,
+    "43": 105,
+    "400": 520,
+    "901": 910,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "LEARNER-CENTERED DESIGN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Design and evaluation of technology-based learning systems. Theories and models of human perception and cognition as they apply to learning, instruction and training. Application of established principles for analyzing and designing learning systems. Proj"
+  },
+  {
+    "4": 4,
+    "43": 125,
+    "400": 521,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "MONTE CARLO ALGORTHMS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "A course about the use of random numbers for numerical computation with particular emphasis on implementation issues and applications in science and finance. Covered topics include: pseudo random number generators, the inversion method, the accept-reject"
+  },
+  {
+    "4": 4,
+    "43": 126,
+    "400": 521,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "MONTE CARLO ALGORTHMS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "A course about the use of random numbers for numerical computation with particular emphasis on implementation issues and applications in science and finance. Covered topics include: pseudo random number generators, the inversion method, the accept-reject"
+  },
+  {
+    "4": 4,
+    "43": 218,
+    "400": 522,
+    "901": 901,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "UX STRATEGY AND WEB ANALYTICS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "In this course, students examine how to align user experience (UX) approaches with business strategy.  Topics include: (a) examining how business and UX strategies are aligned; (b) translation of business goals into measurable metrics; and (c) assessing m"
+  },
+  {
+    "4": 4,
+    "43": 219,
+    "400": 522,
+    "901": 910,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "UX STRATEGY AND WEB ANALYTICS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "In this course, students examine how to align user experience (UX) approaches with business strategy.  Topics include: (a) examining how business and UX strategies are aligned; (b) translation of business goals into measurable metrics; and (c) assessing m"
+  },
+  {
+    "4": 4,
+    "43": 18,
+    "400": 528,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "COMPUTER VISION",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Computer Vision techniques for analysis of patterns in visual images and videos of 2D and 3D scenes will be explored with the goal of interpreting, understanding, and reconstructing 3D scenes.  Topics to be covered include image formation and representati"
+  },
+  {
+    "4": 4,
+    "43": 19,
+    "400": 528,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "COMPUTER VISION",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Computer Vision techniques for analysis of patterns in visual images and videos of 2D and 3D scenes will be explored with the goal of interpreting, understanding, and reconstructing 3D scenes.  Topics to be covered include image formation and representati"
+  },
+  {
+    "4": 4,
+    "43": 4,
+    "400": 529,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "ADVANCED DATA MINING",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "The course is for students with prior background in data mining or machine learning techniques, and covers more advanced modeling techniques, including ensemble learning, extended linear models such as support vector machines, probabilistic graphical mode"
+  },
+  {
+    "4": 4,
+    "43": 5,
+    "400": 529,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "ADVANCED DATA MINING",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "The course is for students with prior background in data mining or machine learning techniques, and covers more advanced modeling techniques, including ensemble learning, extended linear models such as support vector machines, probabilistic graphical mode"
+  },
+  {
+    "4": 4,
+    "43": 100,
+    "400": 535,
+    "901": 901,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "IT INVESTMENT FINANCIAL ANALYS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This course focuses on the application of financial analysis and decision-making approaches to aid information technology investment decisions at the operational, project, tactical and strategic levels.  Students will learn how to apply a variety of finan"
+  },
+  {
+    "4": 4,
+    "43": 101,
+    "400": 535,
+    "901": 910,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "IT INVESTMENT FINANCIAL ANALYS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This course focuses on the application of financial analysis and decision-making approaches to aid information technology investment decisions at the operational, project, tactical and strategic levels.  Students will learn how to apply a variety of finan"
+  },
+  {
+    "4": 4,
+    "43": 47,
+    "400": 536,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "DISTRIBUTED SYSTEMS II",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "An intermediate course on distributed systems. Topics may include: clock synchronization; mutual exclusion; distributed transactions; consistency models; distribution and consistency protocols; failure models; achieving fault tolerance; distributed object"
+  },
+  {
+    "4": 4,
+    "43": 48,
+    "400": 536,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "DISTRIBUTED SYSTEMS II",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "An intermediate course on distributed systems. Topics may include: clock synchronization; mutual exclusion; distributed transactions; consistency models; distribution and consistency protocols; failure models; achieving fault tolerance; distributed object"
+  },
+  {
+    "4": 4,
+    "43": 193,
+    "400": 543,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "SPATIAL DBASE/GEOGRPH INFO SYS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This course considers how spatial databases work within a GIS, how data is structured, stored, indexed, retrieved, and displayed.  Other topics may include fuzzy spatial databases, temporal spatial databases, and multiple criteria spatial decision making."
+  },
+  {
+    "4": 4,
+    "43": 194,
+    "400": 543,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "SPATIAL DBASE/GEOGRPH INFO SYS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This course considers how spatial databases work within a GIS, how data is structured, stored, indexed, retrieved, and displayed.  Other topics may include fuzzy spatial databases, temporal spatial databases, and multiple criteria spatial decision making."
+  },
+  {
+    "4": 4,
+    "43": 6,
+    "400": 554,
+    "901": 920,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "ADVANCED DATABASE MANAGEMENT",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "In this class, we will discuss concepts, technologies, guiding principles, processes and best practices in managing database environment to meet high availability, scalability, and compliance needs.   Organizations with business critical applications must"
+  },
+  {
+    "4": 4,
+    "43": 121,
+    "400": 555,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "MINING BIG DATA",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Introduction to fundamentals of distributed file systems and map-reduce technology (e.g., Hadoop); tuning map-reduce performance in a distributed network. Algorithms and tools for mining massive data sets and discussion of current challenges. Applications"
+  },
+  {
+    "4": 4,
+    "43": 122,
+    "400": 555,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "MINING BIG DATA",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Introduction to fundamentals of distributed file systems and map-reduce technology (e.g., Hadoop); tuning map-reduce performance in a distributed network. Algorithms and tools for mining massive data sets and discussion of current challenges. Applications"
+  },
+  {
+    "4": 4,
+    "43": 57,
+    "400": 560,
+    "901": 901,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "ENTERPRISE SYSTEMS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "An introduction to enterprise systems for data and process integration, including ERP systems.  Topics include the requirements of enterprise systems, application architecture, to and functionality of leading enterprise systems, life cycle and methodo"
+  },
+  {
+    "4": 4,
+    "43": 58,
+    "400": 560,
+    "901": 910,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "ENTERPRISE SYSTEMS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "An introduction to enterprise systems for data and process integration, including ERP systems.  Topics include the requirements of enterprise systems, application architecture, to and functionality of leading enterprise systems, life cycle and methodo"
+  },
+  {
+    "4": 4,
+    "43": 55,
+    "400": 570,
+    "901": 901,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "ENTERPRISE SYSTEM IMPLEMENTATN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Formerly IS 450.  This course is targeted towards information systems professionals who are involved in the planning and implementation of large scale, cross-functional enterprise systems.  Students will examine the characteristics of technology efforts t"
+  },
+  {
+    "4": 4,
+    "43": 56,
+    "400": 570,
+    "901": 910,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "ENTERPRISE SYSTEM IMPLEMENTATN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Formerly IS 450.  This course is targeted towards information systems professionals who are involved in the planning and implementation of large scale, cross-functional enterprise systems.  Students will examine the characteristics of technology efforts t"
+  },
+  {
+    "4": 4,
+    "43": 16,
+    "400": 574,
+    "901": 901,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "BUSINESS INTELLIGENCE",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Introduction to the concepts of business intelligence (BI) as components and functionality of information systems. How business problems can be solved effectively by using operational data to create data warehouses, and then applying data mining tools and"
+  },
+  {
+    "4": 4,
+    "43": 17,
+    "400": 574,
+    "901": 910,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "BUSINESS INTELLIGENCE",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Introduction to the concepts of business intelligence (BI) as components and functionality of information systems. How business problems can be solved effectively by using operational data to create data warehouses, and then applying data mining tools and"
+  },
+  {
+    "4": 4,
+    "43": 150,
+    "400": 577,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RECOMMENDER SYSTEMS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Recommender systems offer personalized access to online information in product catalogs, social media networks, and document collections, among other applications. This class will introduce students to a range of approaches for building recommender system"
+  },
+  {
+    "4": 4,
+    "43": 151,
+    "400": 577,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RECOMMENDER SYSTEMS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Recommender systems offer personalized access to online information in product catalogs, social media networks, and document collections, among other applications. This class will introduce students to a range of approaches for building recommender system"
+  },
+  {
+    "4": 4,
+    "43": 91,
+    "400": 578,
+    "901": 901,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "INFORMATN TECH CONSULTING",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This course is for the IT professional.  The emphasis is on examining the models, techniques, and skill development for providing effective IT consulting services.  The course examines the structure of IT consulting markets; leading IT consulting practice"
+  },
+  {
+    "4": 4,
+    "43": 92,
+    "400": 578,
+    "901": 910,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "INFORMATN TECH CONSULTING",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This course is for the IT professional.  The emphasis is on examining the models, techniques, and skill development for providing effective IT consulting services.  The course examines the structure of IT consulting markets; leading IT consulting practice"
+  },
+  {
+    "4": 4,
+    "43": 220,
+    "400": 579,
+    "901": 601,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "VIRTUAL SOFTWARE TEAMS MANAGEM",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Application of project management principles, to and techniques to a virtual software development project; management of virtual software teams; planning, executing the plan, monitoring and controlling the development process. Work with project office"
+  },
+  {
+    "4": 4,
+    "43": 217,
+    "400": 580,
+    "901": 901,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "USER EXPERIENCE DESIGN PRACTIC",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Working with clients, students choose and practice appropriate methods learned in the HCI foundational courses to address business goals and user needs.  Course coverage includes best practices for consulting, effective communication with clients and cowo"
+  },
+  {
+    "4": 4,
+    "43": 146,
+    "400": 588,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "REAL-TIME MULTITHREADED ARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Real-time constrained multithreaded architecture.  Topics include multithreaded handle development, inter-thread communication, creating systems for user-defined callbacks, asynchronous loading and streaming of resources, non-blocking threading synchroniz"
+  },
+  {
+    "4": 4,
+    "43": 147,
+    "400": 588,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "REAL-TIME MULTITHREADED ARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Real-time constrained multithreaded architecture.  Topics include multithreaded handle development, inter-thread communication, creating systems for user-defined callbacks, asynchronous loading and streaming of resources, non-blocking threading synchroniz"
+  },
+  {
+    "4": 4,
+    "43": 205,
+    "400": 590,
+    "901": 901,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "TOPC HUMN-COMPTR INTRACTN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Specific topics selected by the instructor. Topic varies with each offering. Contact instructor for more information. Prerequisite(s): See syllabus or consent of the instructor"
+  },
+  {
+    "4": 4,
+    "43": 206,
+    "400": 590,
+    "901": 910,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "TOPC HUMN-COMPTR INTRACTN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Specific topics selected by the instructor. Topic varies with each offering. Contact instructor for more information. Prerequisite(s): See syllabus or consent of the instructor"
+  },
+  {
+    "4": 4,
+    "43": 207,
+    "400": 590,
+    "901": 902,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "TOPC HUMN-COMPTR INTRACTN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Specific topics selected by the instructor. Topic varies with each offering. Contact instructor for more information. Prerequisite(s): See syllabus or consent of the instructor"
+  },
+  {
+    "4": 4,
+    "43": 208,
+    "400": 590,
+    "901": 911,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "TOPC HUMN-COMPTR INTRACTN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Specific topics selected by the instructor. Topic varies with each offering. Contact instructor for more information. Prerequisite(s): See syllabus or consent of the instructor"
+  },
+  {
+    "4": 4,
+    "43": 209,
+    "400": 590,
+    "901": 901,
+    "CSC": "IT",
+    "Computer Science": "Information Technology",
+    "DISCRETE STRUCTURES FOR CS": "TOPICS IN INFO TECH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Advanced study focusing on a specific area of information technology each quarter.  May be repeated for credit.  PREREQUISITE(S): Instructor consent required"
+  },
+  {
+    "4": 4,
+    "43": 210,
+    "400": 590,
+    "901": 910,
+    "CSC": "IT",
+    "Computer Science": "Information Technology",
+    "DISCRETE STRUCTURES FOR CS": "TOPICS IN INFO TECH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Advanced study focusing on a specific area of information technology each quarter.  May be repeated for credit.  PREREQUISITE(S): Instructor consent required"
+  },
+  {
+    "4": 4,
+    "43": 211,
+    "400": 590,
+    "901": 903,
+    "CSC": "IT",
+    "Computer Science": "Information Technology",
+    "DISCRETE STRUCTURES FOR CS": "TOPICS IN INFO TECH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Advanced study focusing on a specific area of information technology each quarter.  May be repeated for credit.  PREREQUISITE(S): Instructor consent required"
+  },
+  {
+    "4": 4,
+    "43": 212,
+    "400": 590,
+    "901": 912,
+    "CSC": "IT",
+    "Computer Science": "Information Technology",
+    "DISCRETE STRUCTURES FOR CS": "TOPICS IN INFO TECH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Advanced study focusing on a specific area of information technology each quarter.  May be repeated for credit.  PREREQUISITE(S): Instructor consent required"
+  },
+  {
+    "4": 4,
+    "43": 213,
+    "400": 590,
+    "901": 902,
+    "CSC": "IT",
+    "Computer Science": "Information Technology",
+    "DISCRETE STRUCTURES FOR CS": "TOPICS IN INFO TECH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Advanced study focusing on a specific area of information technology each quarter.  May be repeated for credit.  PREREQUISITE(S): Instructor consent required"
+  },
+  {
+    "4": 4,
+    "43": 214,
+    "400": 590,
+    "901": 911,
+    "CSC": "IT",
+    "Computer Science": "Information Technology",
+    "DISCRETE STRUCTURES FOR CS": "TOPICS IN INFO TECH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Advanced study focusing on a specific area of information technology each quarter.  May be repeated for credit.  PREREQUISITE(S): Instructor consent required"
+  },
+  {
+    "4": 4,
+    "43": 189,
+    "400": 591,
+    "901": 901,
+    "CSC": "SE",
+    "Computer Science": "Software Engineering",
+    "DISCRETE STRUCTURES FOR CS": "SOFTWARE ENGINEERING STUDIO II",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This is the continuation of SE 491. SE 491 and 591 must be taken as a sequence in two consecutive quarters.  PREREQUISITE(S): SE 491"
+  },
+  {
+    "4": 4,
+    "43": 190,
+    "400": 591,
+    "901": 910,
+    "CSC": "SE",
+    "Computer Science": "Software Engineering",
+    "DISCRETE STRUCTURES FOR CS": "SOFTWARE ENGINEERING STUDIO II",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "This is the continuation of SE 491. SE 491 and 591 must be taken as a sequence in two consecutive quarters.  PREREQUISITE(S): SE 491"
+  },
+  {
+    "4": 4,
+    "43": 9,
+    "400": 594,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "ARTIFICIAL INTELL TOPICS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Specific topics will be selected by the instructor and may vary with each quarter. Can be repeated for credit. Variable credit.  PREREQUISITE(S): For specific prerequisites, see syllabus or consult course instructor. (variable credit)"
+  },
+  {
+    "4": 4,
+    "43": 10,
+    "400": 594,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "ARTIFICIAL INTELL TOPICS",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Specific topics will be selected by the instructor and may vary with each quarter. Can be repeated for credit. Variable credit.  PREREQUISITE(S): For specific prerequisites, see syllabus or consult course instructor. (variable credit)"
+  },
+  {
+    "4": 4,
+    "43": 69,
+    "400": 594,
+    "901": 920,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "HUM-COM INTRACTN CAPSTONE",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "HCI 594 provides an opportunity for students to apply all of the skills they have learned on one comprehensive project. Multidisciplinary teams design, evaluate, and implement a user interface intensive project. Students prepare written documents describi"
+  },
+  {
+    "4": 6,
+    "43": 70,
+    "400": 599,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "INDEPENDENT STUDY",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Independent study supervised by an instructor. Independent study form required. Can be repeated for credit. Variable Credit.  PREREQUISITE(S): None.  (variable credit)"
+  },
+  {
+    "4": 6,
+    "43": 71,
+    "400": 599,
+    "901": 902,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "INDEPENDENT STUDY",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Independent study supervised by an instructor. Independent study form required. Can be repeated for credit. Variable Credit.  PREREQUISITE(S): None.  (variable credit)"
+  },
+  {
+    "4": 4,
+    "43": 72,
+    "400": 599,
+    "901": 903,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "INDEPENDENT STUDY",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Independent study supervised by an instructor. Independent study form required. Can be repeated for credit. Variable Credit.  PREREQUISITE(S): None.  (variable credit)"
+  },
+  {
+    "4": 4,
+    "43": 73,
+    "400": 599,
+    "901": 904,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "INDEPENDENT STUDY",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Independent study supervised by an instructor. Independent study form required. Can be repeated for credit. Variable Credit.  PREREQUISITE(S): None.  (variable credit)"
+  },
+  {
+    "4": 4,
+    "43": 74,
+    "400": 599,
+    "901": 905,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "INDEPENDENT STUDY",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Independent study supervised by an instructor. Independent study form required. Can be repeated for credit. Variable Credit.  PREREQUISITE(S): None.  (variable credit)"
+  },
+  {
+    "4": 2,
+    "43": 75,
+    "400": 599,
+    "901": 906,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "INDEPENDENT STUDY",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Independent study supervised by an instructor. Independent study form required. Can be repeated for credit. Variable Credit.  PREREQUISITE(S): None.  (variable credit)"
+  },
+  {
+    "4": 2,
+    "43": 76,
+    "400": 599,
+    "901": 907,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "INDEPENDENT STUDY",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Independent study supervised by an instructor. Independent study form required. Can be repeated for credit. Variable Credit.  PREREQUISITE(S): None.  (variable credit)"
+  },
+  {
+    "4": 2,
+    "43": 77,
+    "400": 599,
+    "901": 908,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "INDEPENDENT STUDY",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Independent study supervised by an instructor. Independent study form required. Can be repeated for credit. Variable Credit.  PREREQUISITE(S): None.  (variable credit)"
+  },
+  {
+    "4": 4,
+    "43": 78,
+    "400": 599,
+    "901": 901,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "INDEPENDENT STUDY",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Independent study supervised by an instructor. Independent study form required. Can be repeated for credit. Prerequisite(s): Consent of the instructor"
+  },
+  {
+    "4": 4,
+    "43": 79,
+    "400": 599,
+    "901": 902,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "INDEPENDENT STUDY",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Independent study supervised by an instructor. Independent study form required. Can be repeated for credit. Prerequisite(s): Consent of the instructor"
+  },
+  {
+    "4": 4,
+    "43": 80,
+    "400": 599,
+    "901": 903,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "INDEPENDENT STUDY",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Independent study supervised by an instructor. Independent study form required. Can be repeated for credit. Prerequisite(s): Consent of the instructor"
+  },
+  {
+    "4": 4,
+    "43": 81,
+    "400": 599,
+    "901": 901,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "INDEPENDENT STUDY",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Independent study supervised by an instructor. Independent study form required. Can be repeated for credit. Variable credit. Prerequisite(s): None"
+  },
+  {
+    "4": 4,
+    "43": 82,
+    "400": 599,
+    "901": 902,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "INDEPENDENT STUDY",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Independent study supervised by an instructor. Independent study form required. Can be repeated for credit. Variable credit. Prerequisite(s): None"
+  },
+  {
+    "4": 4,
+    "43": 83,
+    "400": 599,
+    "901": 904,
+    "CSC": "HCI",
+    "Computer Science": "Human-Computer Interaction",
+    "DISCRETE STRUCTURES FOR CS": "INDEPENDENT STUDY",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Independent study supervised by an instructor. Independent study form required. Can be repeated for credit. Prerequisite(s): Consent of the instructor"
+  },
+  {
+    "4": 4,
+    "43": 84,
+    "400": 599,
+    "901": 903,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "INDEPENDENT STUDY",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Independent study supervised by an instructor. Independent study form required. Can be repeated for credit. Variable credit. Prerequisite(s): None"
+  },
+  {
+    "4": 4,
+    "43": 85,
+    "400": 599,
+    "901": 904,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "INDEPENDENT STUDY",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Independent study supervised by an instructor. Independent study form required. Can be repeated for credit. Variable credit. Prerequisite(s): None"
+  },
+  {
+    "4": 4,
+    "43": 86,
+    "400": 599,
+    "901": 905,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "INDEPENDENT STUDY",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Independent study supervised by an instructor. Independent study form required. Can be repeated for credit. Variable credit. Prerequisite(s): None"
+  },
+  {
+    "4": 4,
+    "43": 87,
+    "400": 599,
+    "901": 906,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "INDEPENDENT STUDY",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Independent study supervised by an instructor. Independent study form required. Can be repeated for credit. Variable credit. Prerequisite(s): None"
+  },
+  {
+    "4": 2,
+    "43": 88,
+    "400": 599,
+    "901": 907,
+    "CSC": "IS",
+    "Computer Science": "Information Systems",
+    "DISCRETE STRUCTURES FOR CS": "INDEPENDENT STUDY",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Independent study supervised by an instructor. Independent study form required. Can be repeated for credit. Variable credit. Prerequisite(s): None"
+  },
+  {
+    "4": 4,
+    "43": 138,
+    "400": 672,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "PREDICTIVE ANALYTICS CAPSTONE",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "The capstone course provides an opportunity for students to integrate and apply the analytics skills and knowledge learned in the classroom to real world data. Students work in teams on a large scale analytics project. At the end of the course, students s"
+  },
+  {
+    "4": 4,
+    "43": 139,
+    "400": 672,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "PREDICTIVE ANALYTICS CAPSTONE",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "The capstone course provides an opportunity for students to integrate and apply the analytics skills and knowledge learned in the classroom to real world data. Students work in teams on a large scale analytics project. At the end of the course, students s"
+  },
+  {
+    "4": 4,
+    "43": 106,
+    "400": 695,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "MASTER'S RESEARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Students interested in a more in-depth study of a particular area will register for this course and work with a faculty member (not necessarily their academic advisor) on a research project. The work involved may include system development, empirical stud"
+  },
+  {
+    "4": 4,
+    "43": 107,
+    "400": 695,
+    "901": 902,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "MASTER'S RESEARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Students interested in a more in-depth study of a particular area will register for this course and work with a faculty member (not necessarily their academic advisor) on a research project. The work involved may include system development, empirical stud"
+  },
+  {
+    "4": 4,
+    "43": 108,
+    "400": 695,
+    "901": 903,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "MASTER'S RESEARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Students interested in a more in-depth study of a particular area will register for this course and work with a faculty member (not necessarily their academic advisor) on a research project. The work involved may include system development, empirical stud"
+  },
+  {
+    "4": 4,
+    "43": 109,
+    "400": 695,
+    "901": 904,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "MASTER'S RESEARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Students interested in a more in-depth study of a particular area will register for this course and work with a faculty member (not necessarily their academic advisor) on a research project. The work involved may include system development, empirical stud"
+  },
+  {
+    "4": 4,
+    "43": 110,
+    "400": 695,
+    "901": 905,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "MASTER'S RESEARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Students interested in a more in-depth study of a particular area will register for this course and work with a faculty member (not necessarily their academic advisor) on a research project. The work involved may include system development, empirical stud"
+  },
+  {
+    "4": 4,
+    "43": 111,
+    "400": 695,
+    "901": 906,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "MASTER'S RESEARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Students interested in a more in-depth study of a particular area will register for this course and work with a faculty member (not necessarily their academic advisor) on a research project. The work involved may include system development, empirical stud"
+  },
+  {
+    "4": 4,
+    "43": 112,
+    "400": 695,
+    "901": 907,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "MASTER'S RESEARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Students interested in a more in-depth study of a particular area will register for this course and work with a faculty member (not necessarily their academic advisor) on a research project. The work involved may include system development, empirical stud"
+  },
+  {
+    "4": 4,
+    "43": 113,
+    "400": 695,
+    "901": 908,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "MASTER'S RESEARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Students interested in a more in-depth study of a particular area will register for this course and work with a faculty member (not necessarily their academic advisor) on a research project. The work involved may include system development, empirical stud"
+  },
+  {
+    "4": 4,
+    "43": 114,
+    "400": 695,
+    "901": 909,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "MASTER'S RESEARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Students interested in a more in-depth study of a particular area will register for this course and work with a faculty member (not necessarily their academic advisor) on a research project. The work involved may include system development, empirical stud"
+  },
+  {
+    "4": 4,
+    "43": 115,
+    "400": 695,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "MASTER'S RESEARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Students interested in a more in-depth study of a particular area will register for this course and work with a faculty member (not necessarily their academic advisor) on a research project. The work involved may include system development, empirical stud"
+  },
+  {
+    "4": 4,
+    "43": 116,
+    "400": 695,
+    "901": 911,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "MASTER'S RESEARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Students interested in a more in-depth study of a particular area will register for this course and work with a faculty member (not necessarily their academic advisor) on a research project. The work involved may include system development, empirical stud"
+  },
+  {
+    "4": 4,
+    "43": 117,
+    "400": 695,
+    "901": 912,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "MASTER'S RESEARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Students interested in a more in-depth study of a particular area will register for this course and work with a faculty member (not necessarily their academic advisor) on a research project. The work involved may include system development, empirical stud"
+  },
+  {
+    "4": 4,
+    "43": 118,
+    "400": 695,
+    "901": 913,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "MASTER'S RESEARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Students interested in a more in-depth study of a particular area will register for this course and work with a faculty member (not necessarily their academic advisor) on a research project. The work involved may include system development, empirical stud"
+  },
+  {
+    "4": 4,
+    "43": 119,
+    "400": 695,
+    "901": 914,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "MASTER'S RESEARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Students interested in a more in-depth study of a particular area will register for this course and work with a faculty member (not necessarily their academic advisor) on a research project. The work involved may include system development, empirical stud"
+  },
+  {
+    "4": 4,
+    "43": 120,
+    "400": 695,
+    "901": 901,
+    "CSC": "SE",
+    "Computer Science": "Software Engineering",
+    "DISCRETE STRUCTURES FOR CS": "MASTER'S RESEARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Students interested in a more in-depth study of a particular area will register for this course and work with a faculty member (not necessarily their academic advisor) on a research project. The work involved may include system development, empirical stud"
+  },
+  {
+    "4": 0,
+    "43": 65,
+    "400": 697,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "GRADUATE INTERNSHIP",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "In cooperation with local employers, the graduate program offers students the opportunity to integrate their academic experience with on-the-job training in computer related work areas. This course is variable credit and may be taken for one to four credi"
+  },
+  {
+    "4": 2,
+    "43": 66,
+    "400": 697,
+    "901": 902,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "GRADUATE INTERNSHIP",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "In cooperation with local employers, the graduate program offers students the opportunity to integrate their academic experience with on-the-job training in computer related work areas. This course is variable credit and may be taken for one to four credi"
+  },
+  {
+    "4": 3,
+    "43": 67,
+    "400": 697,
+    "901": 903,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "GRADUATE INTERNSHIP",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "In cooperation with local employers, the graduate program offers students the opportunity to integrate their academic experience with on-the-job training in computer related work areas. This course is variable credit and may be taken for one to four credi"
+  },
+  {
+    "4": 4,
+    "43": 68,
+    "400": 697,
+    "901": 904,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "GRADUATE INTERNSHIP",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "In cooperation with local employers, the graduate program offers students the opportunity to integrate their academic experience with on-the-job training in computer related work areas. This course is variable credit and may be taken for one to four credi"
+  },
+  {
+    "4": 8,
+    "43": 153,
+    "400": 699,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESEARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "PREREQUISITE(S): Research course supervised by an instructor. Independent Study Form required.  Variable credit.  Can be repeated for credit. (variable credit)"
+  },
+  {
+    "4": 8,
+    "43": 154,
+    "400": 699,
+    "901": 902,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESEARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "PREREQUISITE(S): Research course supervised by an instructor. Independent Study Form required.  Variable credit.  Can be repeated for credit. (variable credit)"
+  },
+  {
+    "4": 3,
+    "43": 155,
+    "400": 699,
+    "901": 903,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESEARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "PREREQUISITE(S): Research course supervised by an instructor. Independent Study Form required.  Variable credit.  Can be repeated for credit. (variable credit)"
+  },
+  {
+    "4": 2,
+    "43": 156,
+    "400": 699,
+    "901": 904,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESEARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "PREREQUISITE(S): Research course supervised by an instructor. Independent Study Form required.  Variable credit.  Can be repeated for credit. (variable credit)"
+  },
+  {
+    "4": 6,
+    "43": 157,
+    "400": 699,
+    "901": 905,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESEARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "PREREQUISITE(S): Research course supervised by an instructor. Independent Study Form required.  Variable credit.  Can be repeated for credit. (variable credit)"
+  },
+  {
+    "4": 2,
+    "43": 158,
+    "400": 699,
+    "901": 906,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESEARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "PREREQUISITE(S): Research course supervised by an instructor. Independent Study Form required.  Variable credit.  Can be repeated for credit. (variable credit)"
+  },
+  {
+    "4": 6,
+    "43": 159,
+    "400": 699,
+    "901": 907,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESEARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "PREREQUISITE(S): Research course supervised by an instructor. Independent Study Form required.  Variable credit.  Can be repeated for credit. (variable credit)"
+  },
+  {
+    "4": 4,
+    "43": 160,
+    "400": 699,
+    "901": 908,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESEARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "PREREQUISITE(S): Research course supervised by an instructor. Independent Study Form required.  Variable credit.  Can be repeated for credit. (variable credit)"
+  },
+  {
+    "4": 2,
+    "43": 161,
+    "400": 699,
+    "901": 909,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESEARCH",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "PREREQUISITE(S): Research course supervised by an instructor. Independent Study Form required.  Variable credit.  Can be repeated for credit. (variable credit)"
+  },
+  {
+    "4": 4,
+    "43": 184,
+    "400": 699,
+    "901": 901,
+    "CSC": "SE",
+    "Computer Science": "Software Engineering",
+    "DISCRETE STRUCTURES FOR CS": "SFTWR ENG RESRCH CONTINTN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Students register for continuation credit after registering for SE 698 in each subsequent quarter until they complete their thesis. Students who fail to do so will have to reregister for SE 698 to meet the requirement for completing that course.  PREREQUI"
+  },
+  {
+    "4": 0,
+    "43": 164,
+    "400": 701,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESIDNT CANDIDCY CONTNATN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Non-credit.  Students admitted to candidacy for the doctoral degree who have completed all course and dissertation registration requirements and who are regularly using the facilities of the University for study and research are required to be registered"
+  },
+  {
+    "4": 0,
+    "43": 165,
+    "400": 701,
+    "901": 902,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESIDNT CANDIDCY CONTNATN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Non-credit.  Students admitted to candidacy for the doctoral degree who have completed all course and dissertation registration requirements and who are regularly using the facilities of the University for study and research are required to be registered"
+  },
+  {
+    "4": 0,
+    "43": 166,
+    "400": 701,
+    "901": 903,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESIDNT CANDIDCY CONTNATN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Non-credit.  Students admitted to candidacy for the doctoral degree who have completed all course and dissertation registration requirements and who are regularly using the facilities of the University for study and research are required to be registered"
+  },
+  {
+    "4": 0,
+    "43": 167,
+    "400": 701,
+    "901": 904,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESIDNT CANDIDCY CONTNATN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Non-credit.  Students admitted to candidacy for the doctoral degree who have completed all course and dissertation registration requirements and who are regularly using the facilities of the University for study and research are required to be registered"
+  },
+  {
+    "4": 0,
+    "43": 168,
+    "400": 701,
+    "901": 905,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESIDNT CANDIDCY CONTNATN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Non-credit.  Students admitted to candidacy for the doctoral degree who have completed all course and dissertation registration requirements and who are regularly using the facilities of the University for study and research are required to be registered"
+  },
+  {
+    "4": 0,
+    "43": 169,
+    "400": 701,
+    "901": 906,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESIDNT CANDIDCY CONTNATN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Non-credit.  Students admitted to candidacy for the doctoral degree who have completed all course and dissertation registration requirements and who are regularly using the facilities of the University for study and research are required to be registered"
+  },
+  {
+    "4": 0,
+    "43": 170,
+    "400": 701,
+    "901": 907,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESIDNT CANDIDCY CONTNATN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Non-credit.  Students admitted to candidacy for the doctoral degree who have completed all course and dissertation registration requirements and who are regularly using the facilities of the University for study and research are required to be registered"
+  },
+  {
+    "4": 0,
+    "43": 171,
+    "400": 701,
+    "901": 908,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESIDNT CANDIDCY CONTNATN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Non-credit.  Students admitted to candidacy for the doctoral degree who have completed all course and dissertation registration requirements and who are regularly using the facilities of the University for study and research are required to be registered"
+  },
+  {
+    "4": 0,
+    "43": 172,
+    "400": 701,
+    "901": 909,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESIDNT CANDIDCY CONTNATN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Non-credit.  Students admitted to candidacy for the doctoral degree who have completed all course and dissertation registration requirements and who are regularly using the facilities of the University for study and research are required to be registered"
+  },
+  {
+    "4": 0,
+    "43": 173,
+    "400": 701,
+    "901": 910,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESIDNT CANDIDCY CONTNATN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Non-credit.  Students admitted to candidacy for the doctoral degree who have completed all course and dissertation registration requirements and who are regularly using the facilities of the University for study and research are required to be registered"
+  },
+  {
+    "4": 0,
+    "43": 174,
+    "400": 701,
+    "901": 911,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESIDNT CANDIDCY CONTNATN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Non-credit.  Students admitted to candidacy for the doctoral degree who have completed all course and dissertation registration requirements and who are regularly using the facilities of the University for study and research are required to be registered"
+  },
+  {
+    "4": 0,
+    "43": 175,
+    "400": 701,
+    "901": 912,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESIDNT CANDIDCY CONTNATN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Non-credit.  Students admitted to candidacy for the doctoral degree who have completed all course and dissertation registration requirements and who are regularly using the facilities of the University for study and research are required to be registered"
+  },
+  {
+    "4": 0,
+    "43": 176,
+    "400": 701,
+    "901": 913,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESIDNT CANDIDCY CONTNATN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Non-credit.  Students admitted to candidacy for the doctoral degree who have completed all course and dissertation registration requirements and who are regularly using the facilities of the University for study and research are required to be registered"
+  },
+  {
+    "4": 0,
+    "43": 177,
+    "400": 701,
+    "901": 914,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESIDNT CANDIDCY CONTNATN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Non-credit.  Students admitted to candidacy for the doctoral degree who have completed all course and dissertation registration requirements and who are regularly using the facilities of the University for study and research are required to be registered"
+  },
+  {
+    "4": 0,
+    "43": 178,
+    "400": 701,
+    "901": 915,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESIDNT CANDIDCY CONTNATN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Non-credit.  Students admitted to candidacy for the doctoral degree who have completed all course and dissertation registration requirements and who are regularly using the facilities of the University for study and research are required to be registered"
+  },
+  {
+    "4": 0,
+    "43": 179,
+    "400": 701,
+    "901": 916,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "RESIDNT CANDIDCY CONTNATN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Non-credit.  Students admitted to candidacy for the doctoral degree who have completed all course and dissertation registration requirements and who are regularly using the facilities of the University for study and research are required to be registered"
+  },
+  {
+    "4": 0,
+    "43": 127,
+    "400": 702,
+    "901": 901,
+    "CSC": "CSC",
+    "Computer Science": "Computer Science",
+    "DISCRETE STRUCTURES FOR CS": "NON-RES CANDIDCY CONTNATN",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "Non-credit. This registration provides for doctoral candidates who have been admitted to candidacy who are not in residence and need only occasional use of University facilities, including the libraries.  PREREQUISITE(S): Admission to Candidacy.  Independ"
+  },
+  {
+    "4": "id",
+    "43": "number",
+    "400": "number",
+    "901": "class_section",
+    "CSC": "subject",
+    "Computer Science": "description",
+    "DISCRETE STRUCTURES FOR CS": "CRSE_TITLE",
+    "This course covers the basic mathematical tools essential for solving problems in computer science.  The mathematical topics are presented with emphasis on their applications in computer science.  The topics covered include: logic and set theory, relation": "CRSE_DESCRLONG"
+  }
+]

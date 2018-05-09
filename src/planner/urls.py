@@ -16,7 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
+from planner.views import (
+    IndexView,
+    CourseList,
+    StudentList
+)
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('planner.urls'))
+    path('', IndexView.as_view()),
+    path('courses/', CourseList.as_view(), name='course-list'),
+    path('students/', StudentList.as_view(), name='student-list'),
 ]
