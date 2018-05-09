@@ -8,37 +8,54 @@ DGDP is a web application developed by a team of students in a software projects
 
 Make sure these are installed locally on your computer 
 
-* Python 3.6
-* Postgresql (cli, gui, or DaaS)
-* virtualenvwrapper ("virtualenvwrapper-win" for windows)
+Windows 10 Pro:
+* Docker for Windows 
 
-
-For the sake of being brief, we will assume virtualenvwrapper has been added to the users path and can use commands like ```workon``` and ```deactivate```.
-
-### Installing
-
-With virtualenvwrapper installed, create a virtual environment for the project and copy the requirements into your new environment. It will activate automatically.
-
-```bash
-mkvirtualenv degree_planner
-cd to/your/projects/directory/
-git clone https://github.com/freddy-mrqz/degree_planner.git
-pip install -r requirements.txt
-```
+Any other Windows:
+* Docker Toolbox
 
 ### Installing, Running and Development with Docker
 
-If you would prefer to use Docker, make use of the `Makefile` that is packaged with the repository. Running `make up_build` will start the application with its dependencies - all you need to do is edit the `src/` folder. When you are finished, run `make down`. 
+Docker containers have been set up for our app and database. Docker has tons of tags and commands to learn. So, A Makefile has been created for convenience.
+
+upon initial setup, run
+
+```
+make docker 
+```
+This will create our app and database containers. this will take a couple minutes. Once this has been completed run
+
+```
+make up_build_d
+```
+to get our images and containers up and running in the background. you can now access our app at localhost:8000 (or 127.0.0.1:8000)
+
+Development can be done as you would normally do. Docker will reflect the changes done on our app in real time. When changes have been made that require migrations to be run on our app, (e.g. creating/editing models) access our containers by running
+
+```
+make exec
+```
+You are now inside the docker container. You can run commands like 
+```
+./manage.py makemigrations
+./manage.py migrate
+```
+to exit the container, just type ```exit```. 
+
+When you are done with development, it is best practice to shut down our containers by running
+```
+make down
+```
+
+whenever you want to start them up again, simply run 
+```
+make up_build_d
+```
+and start developing :).
 
 **Note: This replaces `mkvirtualenv`, and any other installation instructions. This is best used if you are familiar with Docker and docker-compose.***
 
-### Running Locally
 
-Run the app's server to ensure the it has been installed correctly,
-```bash
-python3 manage.py runserver
-```
-If no errors occur, start up a browser and go to http://127.0.0.1:8000/ to see the app running locally on your computer.
 
 #### Development best practices 
 

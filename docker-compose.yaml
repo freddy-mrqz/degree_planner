@@ -4,10 +4,11 @@ services:
   degree_planner:
     build:
       context: .
-      dockerfile: Dockerfile.local
     container_name: degree_planner
     volumes: 
-      - ./src:/src 
+      - ./config:/home/docker/config
+      - ./src:/home/docker/src 
+      - ./manage.py:/home/docker/manage.py
     ports:
       - "8000:8000"
   db:
