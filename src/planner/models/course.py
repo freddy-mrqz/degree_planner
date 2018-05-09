@@ -13,24 +13,5 @@ class Course(models.Model):
     def __string__(self):
         return "{}".format(self.number)
 
-    def create_course(cls, id, number, description, subject, class_section, title, credit_hours):
-        return cls.objects.create(
-            self.id=id,
-            self.number=number,
-            self.description=description,
-            self.subject=subject,
-            self.class_section=class_section,
-            self.title=title,
-            self.credit_hours=credit_hours
-        )
-
     class Meta:
         app_label = "catalog"
-
-class Combinations(models.Model):
-    LOGICAL_OPERATORS = (
-        ('OR', 'OR'),
-        ('AND', 'AND')
-    )
-    id = models.IntegerField()
-    logical_operator = models.CharField(choices=LOGICAL_OPERATORS)

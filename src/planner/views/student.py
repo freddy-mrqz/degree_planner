@@ -1,9 +1,9 @@
-from django.views.generic import DetailView
+from django.views.generic import DetailView, ListView
 
 from planner.models import Student
 
 
-class CourseList(ListView):
+class StudentList(ListView):
 
     model = Student
     context_object_name = 'student_list'

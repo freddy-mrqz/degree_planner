@@ -1,6 +1,6 @@
 from django.views.generic import ListView, DetailView
 
-from models.course import Course
+from planner.models import Course
 
 
 class CourseList(ListView):
@@ -18,4 +18,4 @@ class CourseDetail(DetailView):
         context = super().get_context_data(**kwargs)
         # Add in a QuerySet of all the courses
         context['course_list'] = Course.objects.all()
-        returb context
+        return context
