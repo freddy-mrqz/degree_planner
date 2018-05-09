@@ -75,7 +75,6 @@ THIRD_PARTY_APPS = [
 ]
 LOCAL_APPS = [
     'planner.apps.PlannerConfig',
-    'catalog.apps.CatalogConfig',
 ]
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
