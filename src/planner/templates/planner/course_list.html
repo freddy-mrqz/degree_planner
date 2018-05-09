@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Courses</h2>
+    <ul>
+        {% for course in object_list %}
+            <li>Course ID: {{ course.id }}</li>
+            <li>Number: {{ course.number }}</li>
+            <li>Description: {{ course.description }}</li>
+            <li>Subject: {{ course.subject }}</li>
+            <li>Class Section: {{ course.class_section }}</li>
+            <li>Title: {{ course.title }}</li>
+            <li>Credit Hours: {{ course.credit_hours }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
