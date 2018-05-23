@@ -15,15 +15,33 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-
+from planner.views.course import CourseList
 from planner.views import (
     IndexView,
     CourseList,
-    StudentList
+    StudentList,
+    LoginView,
+    StudentForm,
+    FacultyForm,
+    CourseBrowser,
+    StudentStep2,
+    StudentFinish,
+    FacultyStep2,
+    FacultyFinish,
+    FacultyLookup
 )
 
 urlpatterns = [
     path('planner/', IndexView.as_view()),
-    path('courses/', CourseList.as_view(), name='course-list'),
+    path('courses/', CourseList.as_view()),
     path('students/', StudentList.as_view(), name='student-list'),
+    path('login/', LoginView.as_view(), name='login-page'),
+    path('student-form', StudentForm.as_view(), name='student-form'),
+    path('faculty-form', FacultyForm.as_view(), name='faculty-form'),
+    path('student-form/browse-courses', CourseBrowser.as_view(), name='browser'),
+    path('student-form/path-step-2', StudentStep2.as_view()),
+    path('student-form/path-display', StudentFinish.as_view()),
+    path('faculty-form/student-path', FacultyLookup.as_view()),
+    path('faculty-form/path-step-2', FacultyStep2.as_view()),
+    path('faculty-form/path-display', FacultyFinish.as_view())
 ]
