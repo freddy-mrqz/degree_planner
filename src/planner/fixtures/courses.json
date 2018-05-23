@@ -1513,7 +1513,7 @@
         "course_id": "30423",
         "term": "All",
         "name": "System Design, Implementation, and Maintenance",
-        "prereqs": "IT 421 and CSC 451",
+        "prereqs": "IS 421 and CSC 451",
         "number": "422",
         "subject": "IS"
     },
