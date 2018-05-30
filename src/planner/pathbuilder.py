@@ -1,382 +1,263 @@
 # defines two functions that build paths based on the user's field of study, electives, and starting term
-import json
 from itertools import cycle, islice
-
-
-def get_data():
-    with open('courses.json') as data_file:
-        data = json.load(data_file)
-    return data
+from variables import is_elective_requirements
+from planner.models import Course
+from term import *
 
 
 def term_order(starting_term):
     terms = ['Fall', 'Winter', 'Spring']
-    for i, term in enumerate(terms):
-        if starting_term in term:
+    for i, semester in enumerate(terms):
+        if starting_term in semester:
             order_of_terms = list(islice(cycle(terms), i, i+20))
             return order_of_terms
 
 
-def prerequisite_check(course):
-    course_subject = course.split()[0]
-    course_number = course.split()[1]
-    data = get_data()
-    for item in data:
-        if item.get("subject") == course_subject:
-            if item.get("number") == course_number:
-                return item.get("prereqs")
-
-
-def check_path(path, prerequisite):
+def check_path(prerequisite):
     split_prerequisite = prerequisite.split(" and ")
     count = 0
     for item in split_prerequisite:
         or_split = item.split(" or ")
-        for term in path:
-            for or_item in or_split:
-                if or_item in term:
-                    count += 1
-                    break
+        for or_item in or_split:
+            if term.contains(or_item):
+                count += 1
+                break
     if count >= len(split_prerequisite):
         return True
     else:
         return False
 
 
-def add_course(course, path):
-    for term in path:
-        if course in term:
-            return False
-    prerequisite = prerequisite_check(course)
+def can_take(course):
+    if term.contains(course.subject + " " + course.number):
+        return False
+    prerequisite = course.prereqs
     if prerequisite == "None" or prerequisite == "Instructor Consent":
         return True
-    prerequisite_fulfilled = check_path(path, prerequisite)
-    if prerequisite_fulfilled:
+    if check_path(prerequisite):
             return True
     else:
         return False
 
 
-def is_limits(concentration):
-    if concentration == 'Business Intelligence':
-        return 3
-    elif concentration == 'Database Administration':
-        return 3
-    elif concentration == 'Systems Analysis':
-        return 2
-    elif concentration == 'Enterprise Infrastructure':
-        return 3
+def add_choice(count, limit, choice, electives):
+    if count < limit:
+        for course in choice:
+            for check_course in electives:
+                if course.course_id == check_course.course_id:
+                    if can_take(course):
+                        term.add_course(course)
+                        return True
+    return False
 
 
-def cs_path_build(concentration, starting_term, number_of_courses):
-    concentration_fall = []
-    concentration_winter = []
-    concentration_spring = []
-    core = []
-    elective_fall = []
-    elective_winter = []
-    elective_spring = []
-    path = []
+def add_class(count, limit, electives):
+    if count < limit:
+        for course in electives:
+            if can_take(course):
+                term.add_course(course)
+                return True
+    return False
+
+
+def add_core(core):
+    for course in core:
+        if can_take(course):
+            term.add_course(course)
+            return True
+    return False
+
+
+def cs_path_build(concentration, starting_term, number_of_courses, choice):
     concentration_count = 0
     elective_count = 0
     course_count = 0
-    data = get_data()
-    for item in data:
-        if item.get("cs_concentration") == concentration:
-            if item.get("term") == 'Fall':
-                concentration_fall.append(item.get("subject")+" "+item.get("number"))
-            elif item.get("term") == 'Winter':
-                concentration_winter.append(item.get("subject")+" "+item.get("number"))
-            elif item.get("term") == 'Spring':
-                concentration_spring.append(item.get("subject")+" "+item.get("number"))
-        elif item.get("cs_concentration") == "CORE":
-            core.append(item.get("subject")+" "+item.get("number"))
-        elif item.get("cs_concentration") != "None":
-            if item.get("term") == 'Fall':
-                elective_fall.append(item.get("subject") + " " + item.get("number"))
-            elif item.get("term") == 'Winter':
-                elective_winter.append(item.get("subject") + " " + item.get("number"))
-            elif item.get("term") == 'Spring':
-                elective_spring.append(item.get("subject") + " " + item.get("number"))
+    core = Course.objects.filter(cs_concentration='CORE')
+    concentration = Course.objects.filter(cs_concentration=concentration)
+    electives = Course.objects.exclude(cs_concentration='None').exclude(cs_concentration=concentration)
+    concentration_fall = concentration.objects.filter(term='Fall')
+    concentration_winter = concentration.objects.filter(term='Winter')
+    concentration_spring = concentration.objects.filter(term='Spring')
+    elective_fall = electives.objects.filter(term='Fall')
+    elective_winter = electives.objects.filter(term='Winter')
+    elective_spring = electives.objects.filter(term='Spring')
     order = term_order(starting_term)
     while True:
-        for term in order:
+        for semester in order:
             if course_count >= 13:
                 break
-            term_object = []
-            term_object.append(term)
-            if term == "Fall":
+            if semester == "Fall":
                 term_count = 0
-                for course in core:
-                    if term_count < number_of_courses:
-                        if add_course(course, path):
-                            term_object.append(course)
-                            term_count += 1
-                            course_count += 1
-                    else:
+                cycle_count = 0
+                while term_count < number_of_courses:
+                    if add_choice(concentration_count, 4, choice, concentration_fall):
+                        concentration_count += 1
+                        term_count += 1
+                        course_count += 1
+                    if add_core(core):
+                        term_count += 1
+                        course_count += 1
+                    if add_class(elective_count, 4, elective_fall):
+                        elective_count += 1
+                        term_count += 1
+                        course_count += 1
+                    if cycle_count >= 5:
+                        term.fill_empty(number_of_courses-term_count)
                         break
-                for course in concentration_fall:
-                    if concentration_count < 4:
-                        if term_count < number_of_courses:
-                            if add_course(course, path):
-                                term_object.append(course)
-                                concentration_count += 1
-                                term_count += 1
-                                course_count += 1
-                        else:
-                            break
-                    else:
-                        break
-                for course in elective_fall:
-                    if term_count < number_of_courses:
-                        if elective_count < 4:
-                            if add_course(course, path):
-                                term_object.append(course)
-                                elective_count += 1
-                                term_count += 1
-                                course_count += 1
-                        else:
-                            break
-                    else:
-                        break
-            elif term == "Winter":
+                    cycle_count += 1
+            elif semester == "Winter":
                 term_count = 0
-                for course in core:
-                    if term_count < number_of_courses:
-                        if add_course(course, path):
-                            term_object.append(course)
-                            term_count += 1
-                            course_count += 1
-                    else:
+                cycle_count = 0
+                while term_count < number_of_courses:
+                    if add_choice(concentration_count, 4, choice, concentration_winter):
+                        concentration_count += 1
+                        term_count += 1
+                        course_count += 1
+                    if add_core(core):
+                        term_count += 1
+                        course_count += 1
+                    if add_class(elective_count, 4, elective_winter):
+                        elective_count += 1
+                        term_count += 1
+                        course_count += 1
+                    if cycle_count >= 5:
+                        term.fill_empty(number_of_courses - term_count)
                         break
-                for course in concentration_winter:
-                    if concentration_count < 4:
-                        if term_count < number_of_courses:
-                            if add_course(course, path):
-                                term_object.append(course)
-                                concentration_count += 1
-                                term_count += 1
-                                course_count += 1
-                        else:
-                            break
-                    else:
-                        break
-                for course in elective_winter:
-                    if term_count < number_of_courses:
-                        if elective_count < 4:
-                            if add_course(course, path):
-                                term_object.append(course)
-                                elective_count += 1
-                                term_count += 1
-                                course_count += 1
-                        else:
-                            break
-                    else:
-                        break
-            elif term == "Spring":
+                    cycle_count += 1
+            elif semester == "Spring":
                 term_count = 0
-                for course in core:
-                    if term_count < number_of_courses:
-                        if add_course(course, path):
-                            term_object.append(course)
-                            term_count += 1
-                            course_count += 1
-                    else:
+                cycle_count = 0
+                while term_count < number_of_courses:
+                    if add_choice(concentration_count, 4, choice, concentration_spring):
+                        concentration_count += 1
+                        term_count += 1
+                        course_count += 1
+                    if add_core(core):
+                        term_count += 1
+                        course_count += 1
+                    if add_class(elective_count, 4, elective_spring):
+                        elective_count += 1
+                        term_count += 1
+                        course_count += 1
+                    if cycle_count >= 5:
+                        term.fill_empty(number_of_courses - term_count)
                         break
-                for course in concentration_spring:
-                    if concentration_count < 4:
-                        if term_count < number_of_courses:
-                            if add_course(course, path):
-                                term_object.append(course)
-                                concentration_count += 1
-                                term_count += 1
-                                course_count += 1
-                        else:
-                            break
-                    else:
-                        break
-                for course in elective_spring:
-                    if term_count < number_of_courses:
-                        if elective_count < 4:
-                            if add_course(course, path):
-                                term_object.append(course)
-                                elective_count += 1
-                                term_count += 1
-                                course_count += 1
-                        else:
-                            break
-                    else:
-                        break
-            path.append(term_object)
+                    cycle_count += 1
         break
-    print(path)
 
 
-def is_path_build(concentration, starting_term, number_of_courses):
-    concentration_fall = []
-    concentration_winter = []
-    concentration_spring = []
-    core = []
-    elective_fall = []
-    elective_winter = []
-    elective_spring = []
-    path = []
+def is_limits(concentration):
+    for key, value in is_elective_requirements.items():
+        if key == concentration:
+            return value
+
+
+def add_capstone(course_count):
+    capstone = Course.objects.get(course_id=30440)
+    if course_count >= 10:
+        if can_take(capstone):
+            term.add_course(capstone)
+            return True
+    return False
+
+
+def is_path_build(concentration, starting_term, number_of_courses, choice):
     concentration_count = 0
     elective_count = 0
     course_count = 0
-    elective_limit = is_limits(concentration)
-    data = get_data()
-    for item in data:
-        if item.get("is_concentration") == "CORE " + concentration:
-            if item.get("term") == 'Fall':
-                concentration_fall.append(item.get("subject") + " " + item.get("number"))
-            elif item.get("term") == 'Winter':
-                concentration_winter.append(item.get("subject") + " " + item.get("number"))
-            elif item.get("term") == 'Spring':
-                concentration_spring.append(item.get("subject") + " " + item.get("number"))
-        elif item.get("is_concentration") == "CORE":
-            core.append(item.get("subject") + " " + item.get("number"))
-        elif item.get("is_concentration") == concentration:
-            if item.get("term") == 'Fall':
-                elective_fall.append(item.get("subject") + " " + item.get("number"))
-            elif item.get("term") == 'Winter':
-                elective_winter.append(item.get("subject") + " " + item.get("number"))
-            elif item.get("term") == 'Spring':
-                elective_spring.append(item.get("subject") + " " + item.get("number"))
+    extra_count = 0
+    core = Course.objects.filter(is_concentration='CORE')
+    concentration = Course.objects.filter(is_concentration=concentration)
+    electives = Course.objects.exclude(is_concentration='None').exclude(is_concentration=concentration)
+    concentration_fall = concentration.objects.filter(term='Fall')
+    concentration_winter = concentration.objects.filter(term='Winter')
+    concentration_spring = concentration.objects.filter(term='Spring')
+    elective_fall = electives.objects.filter(term='Fall')
+    elective_winter = electives.objects.filter(term='Winter')
+    elective_spring = electives.objects.filter(term='Spring')
     order = term_order(starting_term)
+    elective_limit = is_limits(concentration)
     concentration_limit = (len(concentration_fall) + len(concentration_winter) + len(concentration_spring))
     while True:
-        for term in order:
-            if course_count >= 12:
+        for semester in order:
+            if course_count >= 13:
                 break
-            term_object = []
-            term_object.append(term)
-            if term == "Fall":
+            if semester == "Fall":
                 term_count = 0
-                for course in core:
-                    if term_count < number_of_courses:
-                        if add_course(course, path):
-                            term_object.append(course)
-                            term_count += 1
-                            course_count += 1
-                    else:
-                        break
-                for course in concentration_fall:
-                    if term_count < number_of_courses:
-                        if concentration_count < concentration_limit:
-                            if add_course(course, path):
-                                term_object.append(course)
-                                concentration_count += 1
-                                term_count += 1
-                                course_count += 1
-                        else:
-                            break
-                    else:
-                        break
-                for course in elective_fall:
-                    if term_count < number_of_courses:
-                        if elective_count < elective_limit:
-                            if add_course(course, path):
-                                term_object.append(course)
-                                elective_count += 1
-                                term_count += 1
-                                course_count += 1
-                        else:
-                            break
-                    else:
-                        break
-            elif term == "Winter":
-                term_count = 0
-                for course in core:
-                    if term_count < number_of_courses:
-                        if add_course(course, path):
-                            term_object.append(course)
-                            term_count += 1
-                            course_count += 1
-                    else:
-                        break
-                for course in concentration_winter:
-                    if term_count < number_of_courses:
-                        if concentration_count < concentration_limit:
-                            if add_course(course, path):
-                                term_object.append(course)
-                                concentration_count += 1
-                                term_count += 1
-                                course_count += 1
-                        else:
-                            break
-                    else:
-                        break
-                for course in elective_winter:
-                    if term_count < number_of_courses:
-                        if elective_count < elective_limit:
-                            if add_course(course, path):
-                                term_object.append(course)
-                                elective_count += 1
-                                term_count += 1
-                                course_count += 1
-                        else:
-                            break
-                    else:
-                        break
-            elif term == "Spring":
-                term_count = 0
-                for course in core:
-                    if term_count < number_of_courses:
-                        if add_course(course, path):
-                            term_object.append(course)
-                            term_count += 1
-                            course_count += 1
-                    else:
-                        break
-                for course in concentration_spring:
-                    if term_count < number_of_courses:
-                        if concentration_count < concentration_limit:
-                            if add_course(course, path):
-                                term_object.append(course)
-                                concentration_count += 1
-                                term_count += 1
-                                course_count += 1
-                        else:
-                            break
-                    else:
-                        break
-                for course in elective_spring:
-                    if term_count < number_of_courses:
-                        if elective_count < elective_limit:
-                            if add_course(course, path):
-                                term_object.append(course)
-                                elective_count += 1
-                                term_count += 1
-                                course_count += 1
-                        else:
-                            break
-                    else:
-                        break
-            if term_count < number_of_courses:
-                if course_count >= 10:
-                    if add_course('IS 577', path):
-                        term_object.append('IS 577')
+                cycle_count = 0
+                while term_count < number_of_courses:
+                    if add_choice(elective_count, elective_limit, choice, elective_fall):
+                        elective_count += 1
                         term_count += 1
                         course_count += 1
-            path.append(term_object)
+                    if add_core(core):
+                        term_count += 1
+                        course_count += 1
+                    if add_class(concentration_count, concentration_limit, concentration_fall):
+                        concentration_count += 1
+                        term_count += 1
+                        course_count += 1
+                    if add_class(extra_count, 1, elective_fall):
+                        extra_count += 1
+                        term_count += 1
+                        course_count += 1
+                    if add_capstone(course_count):
+                        term_count += 1
+                        course_count += 1
+                    if cycle_count >= 5:
+                        term.fill_empty(number_of_courses - term_count)
+                        break
+                    cycle_count += 1
+            elif semester == "Winter":
+                term_count = 0
+                cycle_count = 0
+                while term_count < number_of_courses:
+                    if add_choice(elective_count, elective_limit, choice, elective_winter):
+                        elective_count += 1
+                        term_count += 1
+                        course_count += 1
+                    if add_core(core):
+                        term_count += 1
+                        course_count += 1
+                    if add_class(concentration_count, concentration_limit, concentration_winter):
+                        concentration_count += 1
+                        term_count += 1
+                        course_count += 1
+                    if add_class(extra_count, 1, elective_winter):
+                        extra_count += 1
+                        term_count += 1
+                        course_count += 1
+                    if add_capstone(course_count):
+                        term_count += 1
+                        course_count += 1
+                    if cycle_count >= 5:
+                        term.fill_empty(number_of_courses - term_count)
+                        break
+                    cycle_count += 1
+            elif semester == "Spring":
+                term_count = 0
+                cycle_count = 0
+                while term_count < number_of_courses:
+                    if add_choice(elective_count, elective_limit, choice, elective_spring):
+                        elective_count += 1
+                        term_count += 1
+                        course_count += 1
+                    if add_core(core):
+                        term_count += 1
+                        course_count += 1
+                    if add_class(concentration_count, concentration_limit, concentration_spring):
+                        concentration_count += 1
+                        term_count += 1
+                        course_count += 1
+                    if add_class(extra_count, 1, elective_spring):
+                        extra_count += 1
+                        term_count += 1
+                        course_count += 1
+                    if add_capstone(course_count):
+                        term_count += 1
+                        course_count += 1
+                    if cycle_count >= 5:
+                        term.fill_empty(number_of_courses - term_count)
+                        break
+                    cycle_count += 1
         break
-    print(path)
-
-
-print("CS test Runs: ")
-cs_path_build("Software and Systems Development", "Fall", 3)
-cs_path_build("Theory", "Winter", 3)
-cs_path_build("Data Science", "Spring", 3)
-cs_path_build("Database Systems", "Winter", 3)
-cs_path_build("Artificial Intelligence", "Fall", 3)
-cs_path_build("Software Engineering", "Spring", 3)
-cs_path_build("Game and Real-Time Systems", "Winter", 3)
-cs_path_build("Human-Computer Interaction", "Fall", 3)
-
-
-print("IS test Runs: ")
-is_path_build("Database Administration", "Fall", 2)
-is_path_build("Enterprise Infrastructure", "Spring", 2)
-is_path_build("Business Intelligence", "Winter", 2)
-is_path_build("Systems Analysis", "Fall", 2)

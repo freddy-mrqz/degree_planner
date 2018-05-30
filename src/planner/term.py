@@ -17,7 +17,7 @@ class Term():
         return to_return
 
     def fill_empty(self,num):
-        while(len(self.courses) < num):
+        for x in range(num):
             self.courses.append("empty")
 
     def add_course(self,course):
