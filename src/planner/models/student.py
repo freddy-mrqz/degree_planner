@@ -30,10 +30,5 @@ class Student(models.Model):
     def current_degree(self):
         return self.degree
 
-    def required_credits(self):
-        CREDIT_REQUIREMENT = 192
-        rc = CREDIT_REQUIREMENT - self.credits
-        return rc
-
     class Meta:
         app_label = "planner"
