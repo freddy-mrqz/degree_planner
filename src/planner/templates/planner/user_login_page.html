@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Graduate Degree Path Generator</title>
+
+<style type="text/css">
+	<!-- CSS goes here -->
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+<script>
+	//this function makes sure the entire text field is selected when the user clicks on it
+	$(function(){
+        $(document).on('click','input[type=text]',function(){ this.select(); });
+    });
+	
+</script>
+</head>
+
+<body>
+	<h1>Welcome User! Please Log In</h1>
+	<div id="login_form">
+		<p>Username: <input type="text" value="user@mail.depaul.edu" id="txtUsername"></p>
+		<p>Password:  <input type="password" id="txtPassword"></p>
+		
+		<p><input type="button" value="Sign In" id="btnLogin"></p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Path Builder Step 2</title>
+
+
+<style>
+	* {
+		box-sizing: border-box;
+	}
+
+	input[type=text], select, textarea {
+		width: 100%;
+		padding: 12px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		resize: vertical;
+	}
+
+	label {
+		padding: 12px 12px 12px 0;
+		display: inline-block;
+	}
+
+	input[type=submit] {
+		background-color: #4CAF50;
+		color: white;
+		padding: 12px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		float: right;
+	}
+
+	input[type=submit]:hover {
+		background-color: #45a049;
+	}
+
+	.container {
+		border-radius: 5px;
+		background-color: #f2f2f2;
+		padding: 20px;
+	}
+
+	.col-25 {
+		float: left;
+		width: 25%;
+		margin-top: 6px;
+	}
+
+	.col-75 {
+		float: left;
+		width: 75%;
+		margin-top: 6px;
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 600px) {
+		.col-25, .col-75, input[type=submit] {
+			width: 100%;
+			margin-top: 0;
+		}
+	}
+	table{
+		font-family: arial;
+		border-collapse: collapse;
+		width: 100%
+	}
+	td, th {
+		border: 1px solid #000000;
+		text-align: left;
+		padding: 8px;
+	}
+	tr{
+		background-color: #FFFFFF
+	}
+</style>
+
+
+<h2>Path Step 2</h2>
+<h3>Please select {{reqnum}} electives for your concentration or area of study</h3>
+<div class="container">
+	<form action="/student-form/path-display" method="post">
+	{% csrf_token %}
+	<div>
+		<div class="row">
+			<div class="col-25">
+				<label for="{{step2.elect1.label}}">{{step2.elec1.label}}</label>
+			</div>
+			<div class="col-25">
+				{{step2.elec1}}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-25">
+				<label for="{{step2.elect2.label}}">{{step2.elec2.label}}</label>
+			</div>
+			<div class="col-25">
+				{{step2.elec2}}
+			</div>
+		</div>
+		{% if ge2 %}
+		<div class="row">
+			<div class="col-25">
+				<label for="{{step2.elect3.label}}">{{step2.elec3.label}}</label>
+			</div>
+			<div class="col-25">
+				{{step2.elec3}}
+			</div>
+		</div>
+		{% endif %}
+		{% if ge3 %}
+		<div class="row">
+			<div class="col-25">
+				<label for="{{step2.elect4.label}}">{{step2.elec4.label}}</label>
+			</div>
+			<div class="col-25">
+				{{step2.elec4}}
+			</div>
+		</div>
+		{% endif %}
+		{% if ge4 %}
+		<div class="row">
+			<div class="col-25">
+				<label for="{{step2.elect5.label}}">{{step2.elec5.label}}</label>
+			</div>
+			<div class="col-25">
+				{{step2.elec5}}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-25">
+				<label for="{{step2.elect5.label}}">{{step2.elec6.label}}</label>
+			</div>
+			<div class="col-25">
+				{{step2.elec6}}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-25">
+				<label for="{{step2.elect7.label}}">{{step2.elec7.label}}</label>
+			</div>
+			<div class="col-25">
+				{{step2.elec7}}
+			</div>
+		</div>
+		{% endif %}
+		<br>
+	<p><h3>Guidelines for Elective Selection</h3></p>
+	<ul>
+		<li>Enter the ID number of the class you wish to take
+		<li>If the course is part of a series of courses you must also choose it's prerequisite
+		<li>If the prerequisite for a course you choose is in this list, you must also take that course
+		<li>You must choose a course for every input box
+	</ul>
+	<br>
+	<div>
+		{% if courses %}
+		<table>
+			<tr>
+				<td><b>ID</b>
+				<td><b>Course Number</b>
+				<td><b>Name</b>
+				<td><b>Description</b>
+				<td><b>Required Prerequisites</b>
+			</tr>
+		{% for course in courses %}
+			<tr>
+				<td>{{course.course_id}}
+				<td>{{course.subject}} {{course.number}}
+				<td>{{course.name}}
+				<td>{{course.description}}
+				<td>{{course.prereqs}}
+			</tr>
+		{% endfor %}
+		</table>
+		{% else %}
+			<p> No courses available for display </p>
+		{% endif %}
+	</div>
+
+	<br>
+	<div class = "row">
+			<input type="submit" value="Finish">
+	</form>
+	<form action="/student-form">
+			<input type="submit" value="Back">
+	</form>
+	
+	
+	</div>
+</div>

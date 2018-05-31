@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Path Generation Form</title>
+
+<style>
+	* {
+		box-sizing: border-box;
+	}
+
+	input[type=text], select, textarea {
+		width: 100%;
+		padding: 12px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		resize: vertical;
+	}
+
+	label {
+		padding: 12px 12px 12px 0;
+		display: inline-block;
+	}
+
+	input[type=submit] {
+		background-color: #4CAF50;
+		color: white;
+		padding: 12px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		float: right;
+	}
+
+	input[type=submit]:hover {
+		background-color: #45a049;
+	}
+
+	.container {
+		border-radius: 5px;
+		background-color: #f2f2f2;
+		padding: 20px;
+	}
+
+	.col-25 {
+		float: left;
+		width: 25%;
+		margin-top: 6px;
+	}
+
+	.col-75 {
+		float: left;
+		width: 75%;
+		margin-top: 6px;
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 600px) {
+		.col-25, .col-75, input[type=submit] {
+			width: 100%;
+			margin-top: 0;
+		}
+	}
+	
+	/*First hide IS Conc drop down, then show CS Conc drop down*/
+	function showCSConc() {
+		$('#divISConc').hide();
+		$('#divCSConc').show();
+	}
+	
+	/*First hide CS Conc drop down, then show IS Conc drop down*/
+	function showISConc() {
+		$('#divCSConc').hide();
+		$('#divISConc').show();
+	}
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+<script type="text/javascript">
+	/*Hides both concentrations, then displays CS by default and selects CS radio*/
+	$(document).ready(function() {
+		$('#divCSConc').hide();
+		$('#divISConc').hide();
+
+		$('#divCSConc').show();
+		
+		document.getElementById("radioCS").checked = true;
+	}); //end ready()
+
+	/*First hide IS Conc drop down, then show CS Conc drop down*/
+	function showCSConc() {
+		$('#divISConc').hide();
+		$('#divCSConc').show();
+	}
+	
+	/*First hide CS Conc drop down, then show IS Conc drop down*/
+	function showISConc() {
+		$('#divCSConc').hide();
+		$('#divISConc').show();
+	}
+</script>
+</head>
+
+<body>
+<h2>Path Generation Form</h2>
+<p>Please type the student's name below to look for them:</p>
+
+<div class="container">
+	<form action="/faculty-form/student-path">
+		<div class="row">
+			<div class="col-25">
+				<label for="sname">Student Name</label>
+			</div>
+			<div class="col-75">
+				<input type="text" id="sname" name="studentname" placeholder="John Doe">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<input type="submit" value="Search">
+		</div>
+	</form>
+</div>
+
+<br>
+
+<h2>Path Generation Form</h2>
+<p>Please enter your information below to generate a new path</p>
+<div class="container">
+	<form action="/student-form/path-step-2" method="post">
+		{% csrf_token %}
+		<div class="row">
+			<div class="col-25">
+				<label for="degree">Degree</label>
+			</div>
+			{% for radio in form.subject %}
+				<label for="{{radio.id_for_label}}">
+				<span class="radio">{{radio.tag}}</span>
+				{{radio.choice_label}}
+				</label>
+			{% endfor %}
+		</div>
+		<div class="row" id="divCSConc">
+			<div class="col-25">
+				<label for="concCS">CS Areas of Study</label>
+			</div>
+			<div class="col-75">
+				{{ form.cs_con }}
+			</div>
+		</div>
+		<div class="row" id="divISConc">
+			<div class="col-25">
+				<label for="concIS">IS Concentrations</label>
+			</div>
+			<div class="col-75">
+				{{ form.is_con }}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-25">
+				<label for="classPerTerm">Classes per Term</label>
+			</div>
+			<div class="col-75">
+				{{ form.num }}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-25">
+				<label for="quarter">Starting Quarter</label>
+			</div>
+			{% for radio in form.start %}
+				<label for="{{radio.id_for_label}}">
+				<span class="radio">{{radio.tag}}</span>
+				{{radio.choice_label}}
+				</label>
+			{% endfor %}
+		</div>
+		<br>
+		<div class="row">
+			<input type="submit" value="Submit">
+		</div>
+	</form>
+</div>
+
+</body>
+</html>
