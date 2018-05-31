@@ -26,6 +26,6 @@ class Term():
     def contains(self,course_string):
         condition = course_string.split(" ")
         for course in self.courses:
-            if course.subject == condition[0] and course.coursename == condition[1]:
+            if course.subject == condition[0] and course.name == condition[1]:
                 return True
         return False
