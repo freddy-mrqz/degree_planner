@@ -68,52 +68,69 @@
 			margin-top: 0;
 		}
 	}
-</style>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
-<script type="text/javascript">
-	/*Hides both concentrations, then displays CS by default and selects CS radio*/
-	/*$(document).ready(function() {
-		$('#divCSConc').hide();
-		$('#divISConc').hide();
-		$('#browseCSConc').hide();
-		$('#browseISConc').hide();
-
-		$('#divCSConc').show();
-		$('#browseCSConc').show();
-		
-		document.getElementById("RadioCS").checked = true;
-		document.getElementById("browseRadioCS").checked = true;
-	}); //end ready()*/
 	
 	/*First hide IS Conc drop down, then show CS Conc drop down*/
 	function showCSConc() {
 		$('#divISConc').hide();
 		$('#divCSConc').show();
-	};
+	}
 	
 	/*First hide CS Conc drop down, then show IS Conc drop down*/
 	function showISConc() {
 		$('#divCSConc').hide();
 		$('#divISConc').show();
-	};
+	}
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+<script type="text/javascript">
+	/*Hides both concentrations, then displays CS by default and selects CS radio*/
+	$(document).ready(function() {
+		$('#divCSConc').hide();
+		$('#divISConc').hide();
+
+		$('#divCSConc').show();
+		
+		document.getElementById("radioCS").checked = true;
+	}); //end ready()
+
+	/*First hide IS Conc drop down, then show CS Conc drop down*/
+	function showCSConc() {
+		$('#divISConc').hide();
+		$('#divCSConc').show();
+	}
 	
-	/*Hide IS dropdown in browse section, then show CS in browse section */
-	function browseShowCSConc() {
-		$('#browseISConc').hide();
-		$('#browseCSConc').show();
-	};
-	
-	/*Hide CS dropdown in browse section, then show IS in browse section */
-	function browseShowISConc(){
-		$('#browseCSConc').hide();
-		$('#browseISConc').show();
-	};
-	
+	/*First hide CS Conc drop down, then show IS Conc drop down*/
+	function showISConc() {
+		$('#divCSConc').hide();
+		$('#divISConc').show();
+	}
 </script>
 </head>
 
 <body>
+<h2>Path Generation Form</h2>
+<p>Please type the student's name below to look for them:</p>
+
+<div class="container">
+	<form action="/faculty-form/student-path">
+		<div class="row">
+			<div class="col-25">
+				<label for="sname">Student Name</label>
+			</div>
+			<div class="col-75">
+				<input type="text" id="sname" name="studentname" placeholder="John Doe">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<input type="submit" value="Search">
+		</div>
+	</form>
+</div>
+
+<br>
+
 <h2>Path Generation Form</h2>
 <p>Please enter your information below to generate a new path</p>
 <div class="container">
@@ -174,5 +191,3 @@
 
 </body>
 </html>
-
-
