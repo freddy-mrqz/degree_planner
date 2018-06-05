@@ -15,10 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from planner.views.course import CourseList
+from planner.views import course
 from planner.views import (
     IndexView,
-    CourseList,
     StudentList,
     LoginView,
     StudentForm,
@@ -33,7 +32,7 @@ from planner.views import (
 
 urlpatterns = [
     path('planner/', IndexView.as_view()),
-    path('courses/', CourseList.as_view()),
+    path(r'^search/$', course.search, name='search' ),
     path('students/', StudentList.as_view(), name='student-list'),
     path('login/', LoginView.as_view(), name='login-page'),
     path('student-form', StudentForm.as_view(), name='student-form'),
