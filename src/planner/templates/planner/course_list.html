@@ -33,26 +33,30 @@
   {% for course in filter.qs %}
 		<div class="card" style="width: 90%; margin: 0 auto">
 			<div class="card-body">
-				<table class="table table-bordered">
-					<thead class="thead-dark">
-						<tr>
-							<th scope="col">Course ID</th>
-							<th scope="col">Subject</th>
-							<th scope="col">Number</th>
-							<th scope="col">Name</th>
-							<th scope="col">Term</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th scope="row">{{ course.course_id }}</th>
-							<td>{{ course.subject }}</td>
-							<td>{{ course.number }}</td>
-							<td>{{ course.name }}</td>
-							<td>{{ course.term }}</td>
-						</tr>	
-					</tbody>
-				</table>
+				<div class="table-responsive">
+					<table class="table table-bordered">
+						<thead class="thead-dark">
+							<tr>
+								<th scope="col">Course ID</th>
+								<th scope="col">Subject</th>
+								<th scope="col">Number</th>
+								<th scope="col">Name</th>
+								<th scope="col">Term</th>
+								<th scope="col">Prerequisites</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">{{ course.course_id }}</th>
+								<td>{{ course.subject }}</td>
+								<td>{{ course.number }}</td>
+								<td>{{ course.name }}</td>
+								<td> {{ course.term }}</td>
+								<td>{{ course.prereqs }}</td>
+							</tr>	
+						</tbody>
+					</table>
+				</div>
 				<p>{{ course.description }}</p>
 			</div>
 		</div>
