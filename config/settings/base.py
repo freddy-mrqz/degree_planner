@@ -71,7 +71,8 @@ DJANGO_APPS = [
     'django.contrib.admin',
 ]
 THIRD_PARTY_APPS = [
-    'import_export'
+    'import_export',
+    'widget_tweaks'
 ]
 LOCAL_APPS = [
     'planner.apps.PlannerConfig',
