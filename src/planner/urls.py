@@ -44,5 +44,6 @@ urlpatterns = [
     path('student-form/path-display', StudentFinish.as_view()),
     path('faculty-form/student-path', FacultyLookup.as_view()),
     path('faculty-form/path-step-2', FacultyStep2.as_view()),
-    path('faculty-form/path-display', FacultyFinish.as_view())
+    path('faculty-form/path-display', FacultyFinish.as_view()),
+    path('faculty-form/lookup',FacultyLookup.as_view())
 ]

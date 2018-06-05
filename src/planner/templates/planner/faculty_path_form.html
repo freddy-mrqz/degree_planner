@@ -107,11 +107,12 @@
 </head>
 
 <body>
-<h2>Stuent Lookup</h2>
+<h2>Student Lookup</h2>
 <p>Please type the student's name below to look for them:</p>
 
 <div class="container">
-	<form action="/faculty-form/student-path">
+	<form action="/faculty-form/lookup" method="post">
+		{% csrf_token %}
 		<div class="row">
 			<div class="col-25">
 				<label for="sname">Student Name</label>
