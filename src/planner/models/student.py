@@ -1,5 +1,7 @@
 from django.contrib.auth.models import User
 from django.db import models
+from django.db.models.signals import post_save
+from django.dispatch import receiver
 
 
 class Student(models.Model):
@@ -17,18 +19,15 @@ class Student(models.Model):
     SPRING = 'Spring'
 
     TERM_CHOICES = (
-            (FALL, 'Fall'),
-            (WINTER, 'Winter'),
-            (SPRING, 'Spring')
-                )
+        (FALL, 'Fall'),
+        (WINTER, 'Winter'),
+        (SPRING, 'Spring')
+    )
 
-
-    degree = models.CharField(max_length=2,choices=DEGREE_CHOICES)
-
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     first_name = models.CharField(max_length=128, blank=True)
     last_name = models.CharField(max_length=128, blank=True)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    credits = models.IntegerField(null=True, blank=True)
+    degree = models.CharField(max_length=2,choices=DEGREE_CHOICES)
     saved_path = models.CharField(max_length=500,blank=True)
     start_term = models.CharField(max_length=10,choices=TERM_CHOICES,default=FALL)
 
