@@ -20,3 +20,4 @@ unicodecsv==0.14.1
 Unidecode==0.4.21
 xlrd==1.1.0
 xlwt==1.3.0
+django-filter==1.1.0
