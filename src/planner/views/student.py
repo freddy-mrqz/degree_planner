@@ -54,6 +54,15 @@ class CourseBrowser(TemplateView):
         context['courses'] = course
         return context
 
+class StudentLoad(TemplateView):
+    template_name = 'planner/student_load.html'
+    path = None
+
+    def get(self, request, *args, **kwargs):
+        path_string = user.student.saved_path
+        if path_string:
+            self.path = IO.string_to_path(path_string)
+        return render(request, self.template_name, {'path' : path})
 
 class StudentStep2(TemplateView):
     template_name = 'planner/student_step_2.html'

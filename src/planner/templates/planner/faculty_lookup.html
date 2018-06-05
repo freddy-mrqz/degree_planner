@@ -83,8 +83,8 @@
 	}
 </style>
 
-
-<h2>Student's Path</h2>
+{% if student %}
+<h2>{{student.first_name}}'s Path</h2>
 <div class="container">
 	<div>
 		{% if path %}
@@ -104,10 +104,11 @@
 	</div>
 
 	<br>
+{% else %}
+	<h2> Student Path </h2>
+	<p> No student with that name was found </p>
+{% endif %}
 	<div class = "row">
-	<!--<form action="">-->
-			<input type="submit" value="Save">
-	<!--</form>-->
 	<form action="/faculty-form">
 			<input type="submit" value="Return to Form">
 	</form>
