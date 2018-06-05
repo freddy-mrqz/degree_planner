@@ -1,8 +1,8 @@
 # defines two functions that build paths based on the user's field of study, electives, and starting term
 from itertools import cycle, islice
-from variables import is_elective_requirements
+from planner.views.variables import is_elective_requirements
 from planner.models import Course
-import term
+from planner.views.term  import Term
 
 
 def term_order(starting_term):
@@ -36,7 +36,8 @@ def check_path(path, prerequisite):
 
 
 def can_take(path, course):
-    course_name = course.subject + " " + course.coursename
+    #course_name = course.subject + " " + str(course.number)
+    course_name = course.course_id
     if path_contains(path, course_name):
         return False
     prerequisite = course.prereqs
@@ -76,20 +77,26 @@ def add_core(path, term_object, core):
     return False
 
 
-def cs_path_build(concentration, starting_term, number_of_courses, choice):
+def cs_path_build(concentration_name, starting_term, number_of_courses, choice):
     path = []
     concentration_count = 0
     elective_count = 0
     course_count = 0
     core = Course.objects.filter(cs_concentration='CORE')
-    concentration = Course.objects.filter(cs_concentration=concentration)
-    electives = Course.objects.exclude(cs_concentration='None').exclude(cs_concentration=concentration)
-    concentration_fall = concentration.objects.filter(term='Fall')
-    concentration_winter = concentration.objects.filter(term='Winter')
-    concentration_spring = concentration.objects.filter(term='Spring')
-    elective_fall = electives.objects.filter(term='Fall')
-    elective_winter = electives.objects.filter(term='Winter')
-    elective_spring = electives.objects.filter(term='Spring')
+    concentration = Course.objects.filter(cs_concentration=concentration_name)
+    electives = Course.objects.exclude(cs_concentration='None').exclude(cs_concentration=concentration_name)
+    #concentration_fall = concentration.objects.filter(term='Fall')
+    #concentration_winter = concentration.objects.filter(term='Winter')
+    #concentration_spring = concentration.objects.filter(term='Spring')
+    #elective_fall = electives.objects.filter(term='Fall')
+    #elective_winter = electives.objects.filter(term='Winter')
+    #elective_spring = electives.objects.filter(term='Spring')
+    concentration_fall = concentration.filter(term='Fall')
+    concentration_winter = concentration.filter(term='Winter')
+    concentration_spring = concentration.filter(term='Spring')
+    elective_fall = electives.filter(term='Fall')
+    elective_winter = electives.filter(term='Winter')
+    elective_spring = electives.filter(term='Spring')
     order = term_order(starting_term)
     while True:
         for semester in order:
@@ -99,60 +106,72 @@ def cs_path_build(concentration, starting_term, number_of_courses, choice):
                 term_object = Term(semester, [])
                 term_count = 0
                 cycle_count = 0
-                while term_count < number_of_courses:
+                #while term_count < number_of_courses:
+                if term_count < number_of_courses:
                     if add_choice(path, term_object, concentration_count, 4, choice, concentration_fall):
                         concentration_count += 1
                         term_count += 1
                         course_count += 1
+                if term_count < number_of_courses:
                     if add_core(path, term_object, core):
                         term_count += 1
                         course_count += 1
+                if term_count < number_of_courses:
                     if add_class(path, term_object, elective_count, 4, elective_fall):
                         elective_count += 1
                         term_count += 1
                         course_count += 1
+                if term_count < number_of_courses:
                     if cycle_count >= 5:
-                        term.fill_empty(term_object, number_of_courses-term_count)
+                        term_object.fill_empty(number_of_courses-term_count)
                         break
                     cycle_count += 1
             elif semester == "Winter":
                 term_object = Term(semester, [])
                 term_count = 0
                 cycle_count = 0
-                while term_count < number_of_courses:
+                #while term_count < number_of_courses:
+                if term_count < number_of_courses:
                     if add_choice(path, term_object, concentration_count, 4, choice, concentration_winter):
                         concentration_count += 1
                         term_count += 1
                         course_count += 1
+                if term_count < number_of_courses:
                     if add_core(path, term_object, core):
                         term_count += 1
                         course_count += 1
+                if term_count < number_of_courses:
                     if add_class(path, term_object, elective_count, 4, elective_winter):
                         elective_count += 1
                         term_count += 1
                         course_count += 1
+                if term_count < number_of_courses:
                     if cycle_count >= 5:
-                        term.fill_empty(term_object, number_of_courses - term_count)
+                        term_object.fill_empty(number_of_courses - term_count)
                         break
                     cycle_count += 1
             elif semester == "Spring":
                 term_object = Term(semester, [])
                 term_count = 0
                 cycle_count = 0
-                while term_count < number_of_courses:
+                #while term_count < number_of_courses:
+                if term_count < number_of_courses:
                     if add_choice(path, term_object, concentration_count, 4, choice, concentration_spring):
                         concentration_count += 1
                         term_count += 1
                         course_count += 1
+                if term_count < number_of_courses:
                     if add_core(path, term_object, core):
                         term_count += 1
                         course_count += 1
+                if term_count < number_of_courses:
                     if add_class(path, term_object, elective_count, 4, elective_spring):
                         elective_count += 1
                         term_count += 1
                         course_count += 1
+                if term_count < number_of_courses:
                     if cycle_count >= 5:
-                        term.fill_empty(term_object, number_of_courses - term_count)
+                        term_object.fill_empty(number_of_courses - term_count)
                         break
                     cycle_count += 1
             path.append(term_object)
@@ -175,23 +194,29 @@ def add_capstone(path, term_object, course_count):
     return False
 
 
-def is_path_build(concentration, starting_term, number_of_courses, choice):
+def is_path_build(concentration_name, starting_term, number_of_courses, choice):
     path = []
     concentration_count = 0
     elective_count = 0
     course_count = 0
     extra_count = 0
     core = Course.objects.filter(is_concentration='CORE')
-    concentration = Course.objects.filter(is_concentration=concentration)
-    electives = Course.objects.exclude(is_concentration='None').exclude(is_concentration=concentration)
-    concentration_fall = concentration.objects.filter(term='Fall')
-    concentration_winter = concentration.objects.filter(term='Winter')
-    concentration_spring = concentration.objects.filter(term='Spring')
-    elective_fall = electives.objects.filter(term='Fall')
-    elective_winter = electives.objects.filter(term='Winter')
-    elective_spring = electives.objects.filter(term='Spring')
+    concentration = Course.objects.filter(is_concentration=concentration_name)
+    electives = Course.objects.exclude(is_concentration='None').exclude(is_concentration=concentration_name)
+    #concentration_fall = concentration.objects.filter(term='Fall')
+    #concentration_winter = concentration.objects.filter(term='Winter')
+    #concentration_spring = concentration.objects.filter(term='Spring')
+    #elective_fall = electives.objects.filter(term='Fall')
+    #elective_winter = electives.objects.filter(term='Winter')
+    #elective_spring = electives.objects.filter(term='Spring')
+    concentration_fall = concentration.filter(term='Fall')
+    concentration_winter = concentration.filter(term='Winter')
+    concentration_spring = concentration.filter(term='Spring')
+    elective_fall = electives.filter(term='Fall')
+    elective_winter = electives.filter(term='Winter')
+    elective_spring = electives.filter(term='Spring')
     order = term_order(starting_term)
-    elective_limit = is_limits(concentration)
+    elective_limit = is_limits(concentration_name)
     concentration_limit = (len(concentration_fall) + len(concentration_winter) + len(concentration_spring))
     while True:
         for semester in order:
@@ -201,81 +226,99 @@ def is_path_build(concentration, starting_term, number_of_courses, choice):
                 term_object = Term(semester, [])
                 term_count = 0
                 cycle_count = 0
-                while term_count < number_of_courses:
+                #while term_count < number_of_courses:
+                if term_count < number_of_courses:
                     if add_choice(path, term_object, elective_count, elective_limit, choice, elective_fall):
                         elective_count += 1
                         term_count += 1
                         course_count += 1
+                if term_count < number_of_courses:
                     if add_core(path, term_object, core):
                         term_count += 1
                         course_count += 1
+                if term_count < number_of_courses:
                     if add_class(path, term_object, concentration_count, concentration_limit, concentration_fall):
                         concentration_count += 1
                         term_count += 1
                         course_count += 1
+                if term_count < number_of_courses:
                     if add_class(path, term_object, extra_count, 1, elective_fall):
                         extra_count += 1
                         term_count += 1
                         course_count += 1
+                if term_count < number_of_courses:
                     if add_capstone(path, term_object, course_count):
                         term_count += 1
                         course_count += 1
+                if term_count < number_of_courses:
                     if cycle_count >= 5:
-                        term.fill_empty(term_object, number_of_courses - term_count)
+                        term_object.fill_empty(number_of_courses - term_count)
                         break
                     cycle_count += 1
             elif semester == "Winter":
                 term_object = Term(semester, [])
                 term_count = 0
                 cycle_count = 0
-                while term_count < number_of_courses:
+                #while term_count < number_of_courses:
+                if term_count < number_of_courses:
                     if add_choice(path, term_object, elective_count, elective_limit, choice, elective_winter):
                         elective_count += 1
                         term_count += 1
                         course_count += 1
+                if term_count < number_of_courses:
                     if add_core(path, term_object, core):
                         term_count += 1
                         course_count += 1
+                if term_count < number_of_courses:
                     if add_class(path, term_object, concentration_count, concentration_limit, concentration_winter):
                         concentration_count += 1
                         term_count += 1
                         course_count += 1
+                if term_count < number_of_courses:
                     if add_class(path, term_object, extra_count, 1, elective_winter):
                         extra_count += 1
                         term_count += 1
                         course_count += 1
+                if term_count < number_of_courses:
                     if add_capstone(path, term_object, course_count):
                         term_count += 1
                         course_count += 1
+                if term_count < number_of_courses:
                     if cycle_count >= 5:
-                        term.fill_empty(term_object, number_of_courses - term_count)
+                        term_object.fill_empty(number_of_courses - term_count)
                         break
                     cycle_count += 1
             elif semester == "Spring":
                 term_object = Term(semester, [])
                 term_count = 0
                 cycle_count = 0
-                while term_count < number_of_courses:
+                #while term_count < number_of_courses:
+                if term_count < number_of_courses:
                     if add_choice(path, term_object, elective_count, elective_limit, choice, elective_spring):
                         elective_count += 1
                         term_count += 1
                         course_count += 1
+                if term_count < number_of_courses:
                     if add_core(path, term_object, core):
                         term_count += 1
                         course_count += 1
+                if term_count < number_of_courses:
                     if add_class(path, term_object, concentration_count, concentration_limit, concentration_spring):
                         concentration_count += 1
                         term_count += 1
                         course_count += 1
+                if term_count < number_of_courses:
                     if add_class(path, term_object, extra_count, 1, elective_spring):
                         extra_count += 1
                         term_count += 1
                         course_count += 1
+                if term_count < number_of_courses:
                     if add_capstone(path, term_object, course_count):
                         term_count += 1
                         course_count += 1
+                if term_count < number_of_courses:
                     if cycle_count >= 5:
-                        term.fill_empty(term_object, number_of_courses - term_count)
+                        term_object.fill_empty(number_of_courses - term_count)
                         break
                     cycle_count += 1
             path.append(term_object)
