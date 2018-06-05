@@ -11,12 +11,26 @@ class Student(models.Model):
         (INFORMATION_SERVICES, 'Information Services'),
         (COMPUTER_SCIENCE, 'Computer Science'),
     )
+
+    FALL = 'Fall'
+    WINTER = 'Winter'
+    SPRING = 'Spring'
+
+    TERM_CHOICES = (
+            (FALL, 'Fall'),
+            (WINTER, 'Winter'),
+            (SPRING, 'Spring')
+                )
+
+
     degree = models.CharField(max_length=2,choices=DEGREE_CHOICES)
 
     first_name = models.CharField(max_length=128, blank=True)
     last_name = models.CharField(max_length=128, blank=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     credits = models.IntegerField(null=True, blank=True)
+    saved_path = models.CharField(max_length=500,blank=True)
+    start_term = models.CharField(max_length=10,choices=TERM_CHOICES,default=FALL)
 
     def __str__(self):
         return '{}'.format(self.first_name)
