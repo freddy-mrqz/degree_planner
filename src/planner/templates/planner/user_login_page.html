@@ -32,13 +32,13 @@
 			<div class="col-8" style="background-image:url(illustration.jpg)">
 			</div><!-- close col-8 -->
 			<div clas-s="col-4 align-self-center" id="login_form">
-				<form action="/null" method="post">
+				<form method="post">
 					<img src="logo.png">
 					<br>
 					<p>Please enter your username and password:</p>
 					<br>
-					<p>Username: <input type="text" value="user@mail.depaul.edu" id="txtUsername"></p><!-- username input field -->
-					<p>Password:  <input type="password" id="txtPassword"></p><!-- password input field -->
+					{% csrf_token %}
+					{{ form.as_p }}
 					<br>
 					<p><input type="submit" class="btn btn-primary" value="Sign In" id="btnLogin"></p>
 				</form>

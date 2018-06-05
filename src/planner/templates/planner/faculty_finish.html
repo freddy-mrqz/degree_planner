@@ -1,8 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Path Display</title>
+{% extends "base.html" %}
+
+{% block content %}
 
 <style>
 	* {
@@ -85,7 +83,7 @@
 
 
 <h2>Finished Path</h2>
-<div class="container">
+<!-- <div class="container"> -->
 	<div>
 		{% if path %}
 			<table>
@@ -111,4 +109,6 @@
 	
 	
 	</div>
-</div>
+<!-- </div> -->
+
+{% endblock content %}

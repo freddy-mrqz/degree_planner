@@ -22,13 +22,11 @@ class Student(models.Model):
             (SPRING, 'Spring')
                 )
 
-
+    user = models.OneToOneField(User,on_delete=models.CASCADE)
     degree = models.CharField(max_length=2,choices=DEGREE_CHOICES)
-
     first_name = models.CharField(max_length=128, blank=True)
     last_name = models.CharField(max_length=128, blank=True)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    credits = models.IntegerField(null=True, blank=True)
+    degree = models.CharField(max_length=2,choices=DEGREE_CHOICES)
     saved_path = models.CharField(max_length=500,blank=True)
     start_term = models.CharField(max_length=10,choices=TERM_CHOICES,default=FALL)
 

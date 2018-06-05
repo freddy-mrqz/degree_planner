@@ -153,4 +153,5 @@ class StudentFinish(TemplateView):
                 self.path = pathbuilder.is_path_build(self.local_con,self.local_start,self.local_num_per,electives)
         return render(request,self.template_name,{'path' : self.path})
 
-
+    def savepath(self):
+        raise Exception("Save Test Exception")
