@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import include, path
+from django.urls import include, path, re_path
 from planner.views import course
 from planner.views import (
     IndexView,
@@ -32,7 +32,7 @@ from planner.views import (
 
 urlpatterns = [
     path('planner/', IndexView.as_view()),
-    path(r'^search/$', course.search, name='search' ),
+    re_path(r'^search/$', course.search, name='search' ),
     path('students/', StudentList.as_view(), name='student-list'),
     path('login/', LoginView.as_view(), name='login-page'),
     path('student-form', StudentForm.as_view(), name='student-form'),

@@ -5,7 +5,7 @@ from planner.models import Course
 def search(request):
     course_list = Course.objects.all()
     course_filter = CourseFilter(request.GET, queryset=course_list)
-    return render(request, 'search/course_list.html', {'filter': course_filter})
+    return render(request, 'planner/course_list.html', {'filter': course_filter})
 
 
 
