@@ -7,7 +7,7 @@
   </form>
   <ul>
   {% for course in filter.qs %}
-    <li>{{ course.name }} - {{ course.subject }} {{ course.number }}</li>
+    <li> {{ course.subject }} {{ course.number }} - {{ course.name }}</li>
   {% endfor %}
   </ul>
 {% endblock %}
