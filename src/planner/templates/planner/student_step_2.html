@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Path Builder Step 2</title>
+{% extends "base.html" %}
 
+{% block content %}
 
 <style>
 	* {
@@ -86,7 +83,7 @@
 
 
 <h2>Path Step 2</h2>
-<h3>Please select {{reqnum}} electives for your concentration or area of study</h3>
+<p>Please select {{reqnum}} electives for your concentration or area of study</p>
 <div class="container">
 	<form action="/student-form/path-display" method="post">
 	{% csrf_token %}
@@ -165,13 +162,13 @@
 	<div>
 		{% if courses %}
 		<table>
-			<tr>
+			<thead>
 				<td><b>ID</b>
 				<td><b>Course Number</b>
 				<td><b>Name</b>
 				<td><b>Description</b>
 				<td><b>Required Prerequisites</b>
-			</tr>
+			</thead>
 		{% for course in courses %}
 			<tr>
 				<td>{{course.course_id}}
@@ -198,3 +195,5 @@
 	
 	</div>
 </div>
+
+{% endblock content %}
