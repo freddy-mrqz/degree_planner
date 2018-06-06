@@ -16,7 +16,9 @@ def path_to_string(num,path):
             raise Exception("Bad parameters")
     return string
 
-def string_to_path(string):
+def string_to_path(start,string):
+    seasons = ['Fall','Winter','Spring']
+    index = seasons.index(start)
     parsed = string.split(";")
     num = int(parsed[0])
     term_num = 1
@@ -28,6 +30,9 @@ def string_to_path(string):
         except:
             raise Exception("requires a list of correct course numbers")
         if len(courses) == num:
-            path.append(Term(1,courses))
+            path.append(Term(seasons[index],courses))
             term_num += 1
+            index = (index + 1) % 3
             courses = []
+    if courses != []:
+        path.append(Term(seasons[index],courses))
