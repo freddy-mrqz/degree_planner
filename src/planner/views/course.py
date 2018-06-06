@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from planner.filters import CourseFilter
+from django.utils.decorators import method_decorator
+from django.contrib.auth.decorators import login_required
 from planner.models import Course
 
 def search(request):
