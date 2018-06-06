@@ -7,8 +7,6 @@ def search(request):
     course_filter = CourseFilter(request.GET, queryset=course_list)
     return render(request, 'planner/course_list.html', {'filter': course_filter})
 
-
-
-
-
-
+@method_decorator(login_required)
+def dispatch(self,*args, **kwargs):
+    return super().dispatch(*args, **kwargs)
