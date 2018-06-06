@@ -54,7 +54,10 @@ class FacultyLookup(TemplateView):
             student_name = student_name.split(" ")
             given = student_name[0]
             sur = student_name[1]
-            student = Student.objects.get(first_name=given,last_name=sur)
+            try:
+                student = Student.objects.get(first_name=given,last_name=sur)
+            except:
+                student = None
             if student:
                 if student.saved_path:
                     path_string = student.saved_path
