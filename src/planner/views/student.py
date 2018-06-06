@@ -1,6 +1,8 @@
 from django.views.generic import DetailView, ListView, TemplateView
 from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 
 from planner.models import Student, Course
 from planner.views import test, term, pathform, variables, step2form, lookup_form, pathbuilder
@@ -15,6 +17,10 @@ final_path = None
 class StudentForm(TemplateView):
     template_name = 'planner/student_path_form.html'
     form_class = pathform.PathForm
+
+    @method_decorator(login_required)
+    def dispatch(self,*args, **kwargs):
+        return super().dispatch(*args, **kwargs)
 
     def get(self, request, *args, **kwargs):
         form = self.form_class()
@@ -35,6 +41,10 @@ class StudentLoad(TemplateView):
     template_name = 'planner/student_load.html'
     path = None
 
+    @method_decorator(login_required)
+    def dispatch(self,*args, **kwargs):
+        return super().dispatch(*args, **kwargs)
+
     def get(self, request, *args, **kwargs):
         path_string = User.student.saved_path
         start_season = User.student.start_term
@@ -52,6 +62,10 @@ class StudentStep2(TemplateView):
     ge4 = False
     ge3 = False
     ge2 = False
+
+    @method_decorator(login_required)
+    def dispatch(self,*args, **kwargs):
+        return super().dispatch(*args, **kwargs)
 
     def post(self, request, *args, **kwargs):
         form = self.form_class(request.POST)
@@ -89,12 +103,12 @@ class StudentStep2(TemplateView):
             if self.reqnum > 4: self.ge4 = True
         dic =  {    'courses' : self.course,
                     'form' : form,
-                    'reqnum' : self.reqnum, 
+                    'reqnum' : self.reqnum,
                     'step2' : step2,
                     'ge2' : self.ge2,
                     'ge3' : self.ge3,
                     'ge4' : self.ge4}
-        return render(request, self.template_name,dic) 
+        return render(request, self.template_name,dic)
 
 
 class StudentFinish(TemplateView):
@@ -105,6 +119,10 @@ class StudentFinish(TemplateView):
     local_start = None
     local_num_per = None
     local_con = None
+
+    @method_decorator(login_required)
+    def dispatch(self,*args, **kwargs):
+        return super().dispatch(*args, **kwargs)
 
     def post(self,request,*args,**kwargs):
         global subject
@@ -145,6 +163,10 @@ class StudentFinish(TemplateView):
 
 class StudentSave(TemplateView):
     template_name = 'planner/student_save.html'
+
+    @method_decorator(login_required)
+    def dispatch(self,*args, **kwargs):
+        return super().dispatch(*args, **kwargs)
 
     def post(self,request,*args,**kwargs):
         global final_path
