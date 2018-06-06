@@ -38,7 +38,7 @@ urlpatterns = [
     url(r'login/$', auth_views.login, {'template_name' : 'planner/user_login_page.html'}, name='login'),
     path('student-form', StudentForm.as_view(), name='student-form'),
     path('faculty-form', FacultyForm.as_view(), name='faculty-form'),
-    path('student-load', StudentLoad.as_view())),
+    path('student-load', StudentLoad.as_view()),
     path('student-form/path-step-2', StudentStep2.as_view()),
     path('student-form/path-display', StudentFinish.as_view()),
     path('student-form/save-path', StudentSave.as_view()),
