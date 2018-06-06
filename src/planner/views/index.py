@@ -6,7 +6,7 @@ from django.views.generic import TemplateView
 
 class IndexView(TemplateView):
 
-    template_name = "planner/planner_index.html"
+    template_name = "planner/student_home.html"
 
     @method_decorator(login_required)
     def dispatch(self,*args, **kwargs):
