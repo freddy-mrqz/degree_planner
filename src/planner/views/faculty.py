@@ -47,7 +47,8 @@ class FacultyLookup(TemplateView):
             if student: 
                 if student.saved_path:
                     path_string = student.saved_path
-                    self.path = IO.string_to_path(path_string)
+                    start_season = student.start_term
+                    self.path = IO.string_to_path(start_season,path_string)
         return render(request, self.template_name, {'path' : self.path, 'student' : student})
 
 
