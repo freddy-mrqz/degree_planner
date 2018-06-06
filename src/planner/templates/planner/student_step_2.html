@@ -3,13 +3,13 @@
 {% block content %}
 
 <div class="container-fluid"><!-- container for the page -->
+	<form action="/student-form/path-display" method="post"></form>
 	<div class="row"><!-- row for the header -->
 		<h2>Path Step 2</h2>
 	</div><!-- close row for the header -->
 	<div class="row"><!-- row for the form -->
 		<div class="col-sm-9"><!-- col for the fields inside form -->
 			<p>Please select {{reqnum}} electives for your concentration or area of study</p>
-			<form action="/student-form/path-display" method="post">
 				{% csrf_token %}
 				<div class="row"><!-- nested row for elective 1 -->
 					<div class="col self-align-start"><!-- col for elective 1 label -->
@@ -74,6 +74,9 @@
 				</div><!-- close nested row for elective 7 -->
 				{% endif %}
 
+		</div><!-- close col for fields inside form -->
+	</div><!-- close row for the form -->
+
 	<br>
 
 	<p><h3>Guidelines for Elective Selection</h3></p>
@@ -113,10 +116,6 @@
 	<div class = "row">
 			<input type="submit" value="Finish">
 	</form>
-	
-</div><!-- close col for fields inside form -->
-</div><!-- close row for the form -->
-
 	<form action="/student-form">
 			<input type="submit" value="Back">
 	</form>
