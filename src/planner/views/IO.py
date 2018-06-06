@@ -36,3 +36,4 @@ def string_to_path(start,string):
             courses = []
     if courses != []:
         path.append(Term(seasons[index],courses))
+    return path

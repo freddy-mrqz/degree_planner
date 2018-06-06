@@ -14,16 +14,16 @@ class Term():
         self.name = string
         self.courses = lst
 
-    def __repr__(self):
-        return self.courses
-
     def to_string(self):
         to_return = ""
         for course in self.courses:
-            raise Exception("Course is {}".format(course.course_id))
-            try:
-                to_return += course.course_id + ";"
-            except:
+            cid = course.course_id
+            #raise Exception("Course is {}".format(course))
+            #try:
+            if cid:
+                to_return += str(cid) + ";"
+            #except
+            else:
                 to_return += "empty;"
         return to_return
 
