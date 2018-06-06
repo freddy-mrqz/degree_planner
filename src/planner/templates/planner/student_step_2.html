@@ -92,7 +92,7 @@
 
 				{% if courses %}
 				<div class="row"><!-- nested row for table -->
-					<table>
+					<table class="table table-striped table-bordered">
 						<thead>
 							<td><b>ID</b>
 							<td><b>Course Number</b>
@@ -119,18 +119,18 @@
 
 				<br>
 
-				<div class = "row">
+				<div class = "row"><!-- nested row for finish button -->
 					<input type="submit" value="Finish">
-				</div>
+				</div><!-- close nested row for finish button -->
 			</form>
 		</div><!-- close col for fields inside form -->
 	</div><!-- close row for the form -->
 
-	<form action="/student-form">
+	<div class="row"><!-- nested row for back button -->
+		<form action="/student-form">
 			<input type="submit" value="Back">
-	</form>
-	
-	
-</div>
+		</form>
+	</div><!-- close nested row for back button -->
+</div><!-- close container for page -->
 
 {% endblock content %}
