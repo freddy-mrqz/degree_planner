@@ -22,11 +22,15 @@ def string_to_path(start,string):
     parsed = string.split(";")
     num = int(parsed[0])
     term_num = 1
+    course_num_list = parsed[1:]
     courses = []
     path = []
-    for course in parsed[1:]:
+    for course in course_num_list:
         try:
-            courses.append(Course.objects.get(course_id=int(course)))
+            course_num = int(course)
+            to_add = Course.objects.get(course_id=course_num)
+            courses.append(to_add)
+            #courses.append(Course.objects.get(course_id=int(course)))
         except:
             courses.append("empty")
         if len(courses) == num:
