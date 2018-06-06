@@ -17,14 +17,12 @@ from django.contrib import admin
 from django.urls import include, path, re_path
 from django.conf.urls import url
 from django.contrib.auth import views as auth_views
-from planner.views import course
+from planner.views import course, logout
 from planner.views import (
     IndexView,
-    StudentList,
     LoginView,
     StudentForm,
     FacultyForm,
-    CourseBrowser,
     StudentStep2,
     StudentFinish,
     FacultyStep2,
@@ -36,10 +34,9 @@ urlpatterns = [
     path('planner/', IndexView.as_view()),
     re_path(r'^search/$', course.search, name='search' ),
     url(r'login/$', auth_views.login, {'template_name' : 'planner/user_login_page.html'}, name='login'),
-    path('students/', StudentList.as_view(), name='student-list'),
+    url(r'logout/$', auth_views.logout),
     path('student-form', StudentForm.as_view(), name='student-form'),
     path('faculty-form', FacultyForm.as_view(), name='faculty-form'),
-    path('student-form/browse-courses', CourseBrowser.as_view(), name='browser'),
     path('student-form/path-step-2', StudentStep2.as_view()),
     path('student-form/path-display', StudentFinish.as_view()),
     path('faculty-form/student-path', FacultyLookup.as_view()),
