@@ -24,13 +24,20 @@
 	</div><!-- close row for the table -->
 
 	<br>
+<<<<<<< HEAD
 
 	<div class = "row"><!-- row for form actions -->
 	<form action="/student-form/save-path" method="post">
 			<input type="submit" value="Save">
 	</form>
+=======
+	<div class = "row">
+	<form action="/student-form/save-path" method="post">
+		{% csrf_token %}
+		<input type="submit" value="Save">
+>>>>>>> master
 	<form action="/student-form">
-			<input type="submit" value="Return to Form">
+		<input type="submit" value="Return to Form">
 	</form>
 	
 	

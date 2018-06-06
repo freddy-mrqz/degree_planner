@@ -11,7 +11,7 @@ def path_to_string(num,path):
     string = str(num) + ";"
     for term in path:
         try:
-            string += term.toString()
+            string += term.to_string()
         except:
             raise Exception("Bad parameters")
     return string
@@ -28,7 +28,7 @@ def string_to_path(start,string):
         try:
             courses.append(Course.objects.get(course_id=int(course)))
         except:
-            raise Exception("requires a list of correct course numbers")
+            courses.append("empty")
         if len(courses) == num:
             path.append(Term(seasons[index],courses))
             term_num += 1
@@ -36,3 +36,4 @@ def string_to_path(start,string):
             courses = []
     if courses != []:
         path.append(Term(seasons[index],courses))
+    return path
