@@ -8,7 +8,7 @@
 	</div><!-- close row for the header -->
 	<div class="row"><!-- row for the table -->
 		{% if path %}
-			<table>
+			<table class="table table-striped table-bordered">
 			{% for term in path %}
 				<tr>
 				<td> {{term.name}}
@@ -17,7 +17,7 @@
 				{% endfor %}
 				</tr>
 			{% endfor %}
-			</table>
+			</table class="table table-striped table-bordered">
 		{% else %}
 			<p> No path available for display </p>
 		{% endif %}
