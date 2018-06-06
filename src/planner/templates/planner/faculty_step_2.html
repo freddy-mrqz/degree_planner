@@ -2,198 +2,137 @@
 
 {% block content %}
 
-<style>
-	* {
-		box-sizing: border-box;
-	}
+<div class="container-fluid" style="margin: auto"><!-- container for the page -->
+	<div class="row"><!-- row for the header -->
+		<h2>Path Step 2</h2>
+	</div><!-- close row for the header -->
+	<div class="row"><!-- row for the form -->
+		<div class="col-sm-9"><!-- col for the fields inside form -->
+			<p>Please select {{reqnum}} electives for your concentration or area of study</p>
+			<form action="/student-form/path-display" method="post">
+				{% csrf_token %}
+				<div class="row"><!-- nested row for elective 1 -->
+					<div class="col self-align-start"><!-- col for elective 1 label -->
+						<label for="{{step2.elect1.label}}">{{step2.elec1.label}}</label>
+					</div><!-- close col for elective 1 -->
+					<div class="col align-self-end"><!-- col for elective 1 field -->
+						{{step2.elec1}}
+					</div><!-- close col for elective 1 field -->
+				</div><!-- close nested row for elective 1 -->
+				<div class="row"><!-- nested row for elective 2 -->
+					<div class="col self-align-start"><!-- col for elective 2 label -->
+						<label for="{{step2.elect2.label}}">{{step2.elec2.label}}</label>
+					</div><!-- close col for elective 2 -->
+					<div class="col align-self-end"><!-- col for elective 2 field -->
+						{{step2.elec2}}
+					</div><!-- close col for elective 2 field -->
+				</div><!-- close nested row for elective 2 -->
+				{% if ge2 %}
+				<div class="row"><!-- nested row for elective 3 -->
+					<div class="col self-align-start"><!-- col for elective 3 label -->
+						<label for="{{step2.elect3.label}}">{{step2.elec3.label}}</label>
+					</div><!-- close col for elective 3 -->
+					<div class="col align-self-end"><!-- col for elective 3 field -->
+						{{step2.elec3}}
+					</div><!-- close col for elective 3 field -->
+				</div><!-- close nested row for elective 3 -->
+				{% endif %}
+				{% if ge3 %}
+				<div class="row"><!-- nested row for elective 4 -->
+					<div class="col self-align-start"><!-- col for elective 4 label -->
+						<label for="{{step2.elect4.label}}">{{step2.elec4.label}}</label>
+					</div><!-- close col for elective 4 -->
+					<div class="col align-self-end"><!-- col for elective 4 field -->
+						{{step2.elec4}}
+					</div><!-- close col for elective 4 field -->
+				</div><!-- close nested row for elective 4 -->
+				{% endif %}
+				{% if ge4 %}
+				<div class="row"><!-- nested row for elective 5 -->
+					<div class="col self-align-start"><!-- col for elective 5 label -->
+						<label for="{{step2.elect5.label}}">{{step2.elec5.label}}</label>
+					</div><!-- close col for elective 5 -->
+					<div class="col align-self-end"><!-- col for elective 5 field -->
+						{{step2.elec5}}
+					</div><!-- close col for elective 5 field -->
+				</div><!-- close nested row for elective 5 -->
+				<div class="row"><!-- nested row for elective 6 -->
+					<div class="col self-align-start"><!-- col for elective 6 label -->
+						<label for="{{step2.elect6.label}}">{{step2.elec6.label}}</label>
+					</div><!-- close col for elective 6 -->
+					<div class="col align-self-end"><!-- col for elective 6 field -->
+						{{step2.elec6}}
+					</div><!-- close col for elective 6 field -->
+				</div><!-- close nested row for elective 6 -->
+				<div class="row"><!-- nested row for elective 7 -->
+					<div class="col self-align-start"><!-- col for elective 7 label -->
+						<label for="{{step2.elect7.label}}">{{step2.elec7.label}}</label>
+					</div><!-- close col for elective 7 -->
+					<div class="col align-self-end"><!-- col for elective 7 field -->
+						{{step2.elec7}}
+					</div><!-- close col for elective 7 field -->
+				</div><!-- close nested row for elective 7 -->
+				{% endif %}
 
-	input[type=text], select, textarea {
-		width: 100%;
-		padding: 12px;
-		border: 1px solid #ccc;
-		border-radius: 4px;
-		resize: vertical;
-	}
+				<br>
+				
+				<div class="row"><!-- nested row for electives guidelines header -->
+					<p><h3>Guidelines for Elective Selection</h3></p>
+				</div><!-- close nested row for electives guideless header -->
+				<div class="row"><!-- nested row for electives guidelines content -->
+					<ul>
+						<li>Enter the ID number of the class you wish to take
+						<li>If the course is part of a series of courses you must also choose it's prerequisite
+						<li>If the prerequisite for a course you choose is in this list, you must also take that course
+						<li>You must choose a course for every input box
+					</ul>
+				</div><!-- close nested row for electives guideless content-->
 
-	label {
-		padding: 12px 12px 12px 0;
-		display: inline-block;
-	}
+				<br>
 
-	input[type=submit] {
-		background-color: #4CAF50;
-		color: white;
-		padding: 12px 20px;
-		border: none;
-		border-radius: 4px;
-		cursor: pointer;
-		float: right;
-	}
+				{% if courses %}
+				<div class="row"><!-- nested row for table -->
+					<table class="table table-striped table-bordered">
+						<thead>
+							<td><b>ID</b>
+							<td><b>Course Number</b>
+							<td><b>Name</b>
+							<td><b>Description</b>
+							<td><b>Required Prerequisites</b>
+						</thead>
+						{% for course in courses %}
+						<tr>
+							<td>{{course.course_id}}
+							<td>{{course.subject}} {{course.number}}
+							<td>{{course.name}}
+							<td>{{course.description}}
+							<td>{{course.prereqs}}
+						</tr>
+						{% endfor %}
+					</table>
+				</div><!-- close nested row for table -->
+				{% else %}
+				<div class="row"><!-- nested row for table exception -->
+					<p> No courses available for display </p>
+				</div><!-- close nested row for table exception -->
+				{% endif %}
 
-	input[type=submit]:hover {
-		background-color: #45a049;
-	}
+				<br>
 
-	.container {
-		border-radius: 5px;
-		background-color: #f2f2f2;
-		padding: 20px;
-	}
-
-	.col-25 {
-		float: left;
-		width: 25%;
-		margin-top: 6px;
-	}
-
-	.col-75 {
-		float: left;
-		width: 75%;
-		margin-top: 6px;
-	}
-
-	/* Clear floats after the columns */
-	.row:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-
-	/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-	@media screen and (max-width: 600px) {
-		.col-25, .col-75, input[type=submit] {
-			width: 100%;
-			margin-top: 0;
-		}
-	}
-	table{
-		font-family: arial;
-		border-collapse: collapse;
-		width: 100%
-	}
-	td, th {
-		border: 1px solid #000000;
-		text-align: left;
-		padding: 8px;
-	}
-	tr{
-		background-color: #FFFFFF
-	}
-</style>
-
-
-<h2>Path Step 2</h2>
-<h3>Please select electives for your concentration or area of study</h3>
-<div class="container">
-	<form action="/faculty-form/path-display" method="post">
-	{% csrf_token %}
-	<div>
-		<div class="row">
-			<div class="col-25">
-				<label for="{{step2.elect1.label}}">{{step2.elec1.label}}</label>
-			</div>
-			<div class="col-25">
-				{{step2.elec1}}
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-25">
-				<label for="{{step2.elect2.label}}">{{step2.elec2.label}}</label>
-			</div>
-			<div class="col-25">
-				{{step2.elec2}}
-			</div>
-		</div>
-		{% if ge2 %}
-		<div class="row">
-			<div class="col-25">
-				<label for="{{step2.elect3.label}}">{{step2.elec3.label}}</label>
-			</div>
-			<div class="col-25">
-				{{step2.elec3}}
-			</div>
-		</div>
-		{% endif %}
-		{% if ge3 %}
-		<div class="row">
-			<div class="col-25">
-				<label for="{{step2.elect4.label}}">{{step2.elec4.label}}</label>
-			</div>
-			<div class="col-25">
-				{{step2.elec4}}
-			</div>
-		</div>
-		{% endif %}
-		{% if ge4 %}
-		<div class="row">
-			<div class="col-25">
-				<label for="{{step2.elect5.label}}">{{step2.elec5.label}}</label>
-			</div>
-			<div class="col-25">
-				{{step2.elec5}}
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-25">
-				<label for="{{step2.elect5.label}}">{{step2.elec6.label}}</label>
-			</div>
-			<div class="col-25">
-				{{step2.elec6}}
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-25">
-				<label for="{{step2.elect7.label}}">{{step2.elec7.label}}</label>
-			</div>
-			<div class="col-25">
-				{{step2.elec7}}
-			</div>
-		</div>
-		{% endif %}
-		<br>
-	<p><h3>Guidelines for Elective Selection</h3></p>
-	<ul>
-		<li>Enter the ID number of the class you wish to take
-		<li>If the course is part of a series of courses you must also choose it's prerequisite
-		<li>If the prerequisite for a course you choose is in this list, you must also take that course
-		<li>You must choose a course for every input box
-	</ul>
-	<br>
-	<div>
-		{% if courses %}
-		<table>
-			<tr>
-				<td><b>ID</b>
-				<td><b>Course Number</b>
-				<td><b>Name</b>
-				<td><b>Description</b>
-				<td><b>Required Prerequisites</b>
-			</tr>
-		{% for course in courses %}
-			<tr>
-				<td>{{course.course_id}}
-				<td>{{course.subject}} {{course.number}}
-				<td>{{course.name}}
-				<td>{{course.description}}
-				<td>{{course.prereqs}}
-			</tr>
-		{% endfor %}
-		</table>
-		{% else %}
-			<p> No courses available for display </p>
-		{% endif %}
-	</div>
+				<div class = "row align-self-end"><!-- nested row for finish button -->
+					<input type="submit" class="btn btn-primary" value="Finish">
+				</div><!-- close nested row for finish button -->
+			</form>
+		</div><!-- close col for fields inside form -->
+	</div><!-- close row for the form -->
 
 	<br>
-	<div class = "row">
-			<input type="submit" value="Finish">
-	</form>
-	<form action="/faculty-form">
-			<input type="submit" value="Back">
-	</form>
-	
-	
-	</div>
-</div>
+
+	<div class="row align-self-end"><!-- nested row for back button -->
+		<form action="/faculty-form">
+			<input type="submit" class="btn btn-primary" value="Back">
+		</form>
+	</div><!-- close nested row for back button -->
+</div><!-- close container for page -->
 
 {% endblock content %}
