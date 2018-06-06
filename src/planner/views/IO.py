@@ -11,7 +11,7 @@ def path_to_string(num,path):
     string = str(num) + ";"
     for term in path:
         try:
-            string += term.toString()
+            string += term.to_string()
         except:
             raise Exception("Bad parameters")
     return string
