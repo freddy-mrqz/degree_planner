@@ -1,32 +1,16 @@
 from django.views.generic import DetailView, ListView, TemplateView
-
-from django.shortcuts import render
+from django.contrib.auth.models import User
+from django.shortcuts import render, redirect
 
 from planner.models import Student, Course
 from planner.views import test, term, pathform, variables, step2form, lookup_form, pathbuilder
 
-class StudentList(ListView):
-
-    model = Student
-    context_object_name = 'student_list'
-
-
-class StudentDetail(DetailView):
-
-    model = Student
-
-    def get_context_data(self, **kwargs):
-        # Call the base implementation first to get a context
-        context = super().get_context_data(**kwargs)
-        # Add in a QuerySet of all the courses
-        context['student_*'] = Student.objects.all()
-        return context
 
 subject = None
 start = None
 num_per = None
 con = None
-
+final_path = None
 
 class StudentForm(TemplateView):
     template_name = 'planner/student_path_form.html'
@@ -38,31 +22,26 @@ class StudentForm(TemplateView):
         global start
         global num_per
         global con
+        global final_path
         subject = None
         start = None
         num_per = None
         con = None
+        final_path = None
         return render(request, self.template_name, {'form' : form})
 
-
-class CourseBrowser(TemplateView):
-    template_name = 'planner/course_browser.html'
-
-    def get_context_data(self,**kwargs):
-        context = super().get_context_data(**kwargs)
-        course = [test.Test('CS','Algorithms',221,'Description Temp','None','Spring')]
-        context['courses'] = course
-        return context
 
 class StudentLoad(TemplateView):
     template_name = 'planner/student_load.html'
     path = None
 
     def get(self, request, *args, **kwargs):
-        path_string = user.student.saved_path
+        path_string = User.student.saved_path
+        start_season = User.student.start_term
         if path_string:
-            self.path = IO.string_to_path(path_string)
+            self.path = IO.string_to_path(start_season,path_string)
         return render(request, self.template_name, {'path' : path})
+
 
 class StudentStep2(TemplateView):
     template_name = 'planner/student_step_2.html'
@@ -132,6 +111,7 @@ class StudentFinish(TemplateView):
         global start
         global num_per
         global con
+        global final_path
         self.local_sub = subject
         if start == '1':
             self.local_start = "Fall"
@@ -162,5 +142,14 @@ class StudentFinish(TemplateView):
                 self.path = pathbuilder.is_path_build(self.local_con,self.local_start,self.local_num_per,electives)
         return render(request,self.template_name,{'path' : self.path})
 
-    def savepath(self):
-        raise Exception("Save Test Exception")
+
+class StudentSave(TemplateView):
+    template_name = 'planner/student_save.html'
+
+    def post(self,request,*args,**kwargs):
+        global final_path
+        path = final_path
+        path_string = path_to_string(path)
+        User.student.saved_path = path_string
+        User.save()
+        return redirect('student-form/')
