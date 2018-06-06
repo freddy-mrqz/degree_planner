@@ -1,5 +1,8 @@
 from django.views.generic import TemplateView
 from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
+from django.views.generic import TemplateView
 
 from planner.views import term
 from planner.views import test, pathform, step2form, variables
@@ -16,6 +19,10 @@ class FacultyForm(TemplateView):
     template_name = 'planner/faculty_path_form.html'
     form_class = pathform.PathForm
     lookup_class = lookup_form.LookupForm
+
+    @method_decorator(login_required)
+    def dispatch(self,*args, **kwargs):
+        return super().dispatch(*args, **kwargs)
 
     def get(self, request, *args, **kwargs):
         form = self.form_class()
@@ -35,7 +42,11 @@ class FacultyLookup(TemplateView):
     template_name = 'planner/faculty_lookup.html'
     form_class = lookup_form.LookupForm
     path = None
-    
+
+    @method_decorator(login_required)
+    def dispatch(self,*args, **kwargs):
+        return super().dispatch(*args, **kwargs)
+
     def post(self, request, *args, **kwargs):
         form = self.form_class(request.POST)
         if form.is_valid():
@@ -44,7 +55,7 @@ class FacultyLookup(TemplateView):
             given = student_name[0]
             sur = student_name[1]
             student = Student.objects.get(first_name=given,last_name=sur)
-            if student: 
+            if student:
                 if student.saved_path:
                     path_string = student.saved_path
                     start_season = student.start_term
@@ -61,6 +72,10 @@ class FacultyStep2(TemplateView):
     ge4 = False
     ge3 = False
     ge2 = False
+
+    @method_decorator(login_required)
+    def dispatch(self,*args, **kwargs):
+        return super().dispatch(*args, **kwargs)
 
     def post(self, request, *args, **kwargs):
         form = self.form_class(request.POST)
@@ -98,12 +113,12 @@ class FacultyStep2(TemplateView):
             if self.reqnum > 4: self.ge4 = True
         dic =  {    'courses' : self.course,
                     'form' : form,
-                    'reqnum' : self.reqnum, 
+                    'reqnum' : self.reqnum,
                     'step2' : step2,
                     'ge2' : self.ge2,
                     'ge3' : self.ge3,
                     'ge4' : self.ge4}
-        return render(request, self.template_name,dic) 
+        return render(request, self.template_name,dic)
 
 
 class FacultyFinish(TemplateView):
@@ -114,6 +129,10 @@ class FacultyFinish(TemplateView):
     local_start = None
     local_num_per = None
     local_con = None
+
+    @method_decorator(login_required)
+    def dispatch(self,*args, **kwargs):
+        return super().dispatch(*args, **kwargs)
 
     def post(self,request,*args,**kwargs):
         global subject
@@ -149,4 +168,3 @@ class FacultyFinish(TemplateView):
             else:
                 self.path = pathbuilder.is_path_build(self.local_con,self.local_start,self.local_num_per,electives)
         return render(request,self.template_name,{'path' : self.path})
-
