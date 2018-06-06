@@ -5,7 +5,8 @@ from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 
 from planner.models import Student, Course
-from planner.views import test, term, pathform, variables, step2form, lookup_form, pathbuilder
+from planner.views import test, term, pathform, variables
+from planner.views import IO, step2form, lookup_form, pathbuilder
 
 
 subject = None
@@ -46,11 +47,12 @@ class StudentLoad(TemplateView):
         return super().dispatch(*args, **kwargs)
 
     def get(self, request, *args, **kwargs):
-        path_string = User.student.saved_path
-        start_season = User.student.start_term
+        path_string = request.user.student.saved_path
+        start_season = request.user.student.start_term
+        student = request.user.student
         if path_string:
             self.path = IO.string_to_path(start_season,path_string)
-        return render(request, self.template_name, {'path' : path})
+        return render(request, self.template_name, {'path' : self.path, 'student' : student})
 
 
 class StudentStep2(TemplateView):
@@ -158,6 +160,7 @@ class StudentFinish(TemplateView):
                 self.path = pathbuilder.cs_path_build(self.local_con,self.local_start,self.local_num_per,electives)
             else:
                 self.path = pathbuilder.is_path_build(self.local_con,self.local_start,self.local_num_per,electives)
+        final_path = self.path
         return render(request,self.template_name,{'path' : self.path})
 
 
@@ -170,8 +173,9 @@ class StudentSave(TemplateView):
 
     def post(self,request,*args,**kwargs):
         global final_path
+        global start
         path = final_path
-        path_string = path_to_string(path)
-        User.student.saved_path = path_string
-        User.save()
-        return redirect('student-form/')
+        path_string = IO.path_to_string(start,path)
+        request.user.student.saved_path = path_string
+        request.user.student.save()
+        return redirect('/student-form')
