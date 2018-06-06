@@ -15,9 +15,11 @@ con = None
 class FacultyForm(TemplateView):
     template_name = 'planner/faculty_path_form.html'
     form_class = pathform.PathForm
+    lookup_class = lookup_form.LookupForm
 
     def get(self, request, *args, **kwargs):
         form = self.form_class()
+        lookup = self.lookup_class()
         global subject
         global start
         global num_per
@@ -26,7 +28,7 @@ class FacultyForm(TemplateView):
         start = None
         num_per = None
         con = None
-        return render(request, self.template_name, {'form' : form})
+        return render(request, self.template_name,  {'lookup' : lookup, 'form' : form})
 
 
 class FacultyLookup(TemplateView):
@@ -37,15 +39,17 @@ class FacultyLookup(TemplateView):
     def post(self, request, *args, **kwargs):
         form = self.form_class(request.POST)
         if form.is_valid():
-            student_name = form.cleaned_data["name"]
+            student_name = form.cleaned_data["fullname"]
             student_name = student_name.split(" ")
             given = student_name[0]
             sur = student_name[1]
             student = Student.objects.get(first_name=given,last_name=sur)
-            if student.path:
-                path_string = student.path
-                self.path = IO.string_to_path(path_string)
-        return render(request, self.template_name, {'path' : path})
+            if student: 
+                if student.saved_path:
+                    path_string = student.saved_path
+                    start_season = student.start_term
+                    self.path = IO.string_to_path(start_season,path_string)
+        return render(request, self.template_name, {'path' : self.path, 'student' : student})
 
 
 class FacultyStep2(TemplateView):
