@@ -103,11 +103,11 @@
 
 	<br>
 	<div class = "row">
-	<!--<form action="">-->
-			<input type="submit" value="Save">
-	<!--</form>-->
+	<form action="/student-form/save-path" method="post">
+		{% csrf_token %}
+		<input type="submit" value="Save">
 	<form action="/student-form">
-			<input type="submit" value="Return to Form">
+		<input type="submit" value="Return to Form">
 	</form>
 	
 	

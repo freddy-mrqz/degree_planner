@@ -3,6 +3,10 @@
 defines a class to hold course objects for use in a path
 contains a name and a list of courses
 '''
+from planner.models import Course
+import logging
+
+logger = logging.getLogger(__name__)
 
 class Term():
 
@@ -10,15 +14,16 @@ class Term():
         self.name = string
         self.courses = lst
 
-    def __repr__(self):
-        return self.courses
-
     def to_string(self):
         to_return = ""
         for course in self.courses:
-            try:
-                to_return += course.course_id + ";"
-            except:
+            cid = course.course_id
+            #raise Exception("Course is {}".format(course))
+            #try:
+            if cid:
+                to_return += str(cid) + ";"
+            #except
+            else:
                 to_return += "empty;"
         return to_return
 
