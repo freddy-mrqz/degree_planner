@@ -10,27 +10,26 @@
     <div class="row justify-content-start"> <!--row for the form-->
         <div class="col-sm-9"><!-- col for the fields inside form -->
             <p>Please type the student's name below to look for them:</p>
-	       <form action="/faculty-form/lookup" method="post">
-		  {% csrf_token %}
-		  <div class="row"><!--nested row for student look up -->
-			<div class="col align-self-start"><!-- col for the student lookup label-->
-                <label for="sname">Student Name</label></div><!-- closes col for student lookup label -->
-			<div class="col align-self-end"><!-- col for for student look up field-->	
-              {{ lookup.fullname }}
-			</div><!-- close col for student look up field-->
-			<div class="row"> <!--makes a new row for search button-->
-            <div class="col align-self-start"><!-- col for search button-->
-              <input type="submit" class="btn btn-primary" value="Search">
-		    </div> <!-- closes col for search button-->
-            </div> <!--closes row for search button--> 
-            </div> <!-- closes nested row-->
-	</form> <!-- closes faculty form-->
+	    	<form action="/faculty-form/lookup" method="post">
+		  		{% csrf_token %}
+		  		<div class="row"><!--nested row for student look up -->
+					<div class="col align-self-start"><!-- col for the student lookup label-->
+						<label for="sname">Student Name</label>
+					</div><!-- closes col for student lookup label -->
+					<div class="col align-self-end"><!-- col for for student look up field-->	
+              			{{ lookup.fullname }}
+					</div><!-- close col for student look up field-->
+					<div class="row"> <!--makes a new row for search button-->
+            			<div class="col align-self-start"><!-- col for search button-->
+              				<input type="submit" class="btn btn-primary" value="Search">
+		    			</div> <!-- closes col for search button-->
+            		</div> <!--closes row for search button--> 
+            	</div> <!-- closes nested row-->
+			</form> <!-- closes faculty form-->
          </div> <!-- closes the fields inside the forms -->
-    </div><!--closes row for the form-->
-            
+	</div><!--closes row for the form-->
 
-<br>
-
+	<br>
 
 	<div class="row"><!-- row for the header -->
 		<h2>Path Generation Form</h2>
@@ -92,7 +91,7 @@
 								{{radio.choice_label}}
 							</label>
 						{% endfor %}
-						</div><!-- close col for starting quarter radio -->
+					</div><!-- close col for starting quarter radio -->
 				</div><!-- close nested row for starting quarter radio -->
 				<br>
 				<div class="row"><!-- nested row for submit button -->
