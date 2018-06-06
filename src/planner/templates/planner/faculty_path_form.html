@@ -2,192 +2,109 @@
 
 {% block content %}
 
-<style>
-	* {
-		box-sizing: border-box;
-	}
-
-	input[type=text], select, textarea {
-		width: 100%;
-		padding: 12px;
-		border: 1px solid #ccc;
-		border-radius: 4px;
-		resize: vertical;
-	}
-
-	label {
-		padding: 12px 12px 12px 0;
-		display: inline-block;
-	}
-
-	input[type=submit] {
-		background-color: #4CAF50;
-		color: white;
-		padding: 12px 20px;
-		border: none;
-		border-radius: 4px;
-		cursor: pointer;
-		float: right;
-	}
-
-	input[type=submit]:hover {
-		background-color: #45a049;
-	}
-
-	.container {
-		border-radius: 5px;
-		background-color: #f2f2f2;
-		padding: 20px;
-	}
-
-	.col-25 {
-		float: left;
-		width: 25%;
-		margin-top: 6px;
-	}
-
-	.col-75 {
-		float: left;
-		width: 75%;
-		margin-top: 6px;
-	}
-
-	/* Clear floats after the columns */
-	.row:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-
-	/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-	@media screen and (max-width: 600px) {
-		.col-25, .col-75, input[type=submit] {
-			width: 100%;
-			margin-top: 0;
-		}
-	}
-	
-	/*First hide IS Conc drop down, then show CS Conc drop down*/
-	function showCSConc() {
-		$('#divISConc').hide();
-		$('#divCSConc').show();
-	}
-	
-	/*First hide CS Conc drop down, then show IS Conc drop down*/
-	function showISConc() {
-		$('#divCSConc').hide();
-		$('#divISConc').show();
-	}
-</style>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
-<script type="text/javascript">
-	/*Hides both concentrations, then displays CS by default and selects CS radio*/
-	/*$(document).ready(function() {
-		$('#divCSConc').hide();
-		$('#divISConc').hide();
-
-		$('#divCSConc').show();
-		
-		document.getElementById("radioCS").checked = true;
-	}); //end ready()*/
-
-	/*First hide IS Conc drop down, then show CS Conc drop down*/
-	function showCSConc() {
-		$('#divISConc').hide();
-		$('#divCSConc').show();
-	}
-	
-	/*First hide CS Conc drop down, then show IS Conc drop down*/
-	function showISConc() {
-		$('#divCSConc').hide();
-		$('#divISConc').show();
-	}
-</script>
-</head>
 
 <body>
-<h2>Student Lookup</h2>
-<p>Please type the student's name below to look for them:</p>
-
-<div class="container">
-	<form action="/faculty-form/lookup" method="post">
-		{% csrf_token %}
-		<div class="row">
-			<div class="col-25">
-				<label for="sname">Student Name</label>
-			</div>
-			<div class="col-75">
-				{{ lookup.fullname }}
-			</div>
-		</div>
-		<br>
-		<div class="row">
-			<input type="submit" value="Search">
-		</div>
-	</form>
-</div>
+<div class="container-fluid"><!-- container for the page -->
+    <div class="row"> <!-- Row for header -->
+        <h2>Student Lookup</h2>
+    </div> <!-- close row for the header-->
+    <div class="row justify-content-start"> <!--row for the form-->
+        <div class="col-sm-9"><!-- col for the fields inside form -->
+            <p>Please type the student's name below to look for them:</p>
+	       <form action="/faculty-form/lookup" method="post">
+		  {% csrf_token %}
+		  <div class="row"><!--nested row for student look up -->
+			<div class="col align-self-start"><!-- col for the student lookup label-->
+                <label for="sname">Student Name</label></div><!-- closes col for student lookup label -->
+			<div class="col align-self-end"><!-- col for for student look up field-->	
+              {{ lookup.fullname }}
+			</div><!-- close col for student look up field-->
+			<div class="row"> <!--makes a new row for search button-->
+            <div class="col align-self-start"><!-- col for search button-->
+              <input type="submit" value="Search">
+		    </div> <!-- closes col for search button-->
+            </div> <!--closes row for search button--> 
+            </div> <!-- closes nested row-->
+	</form> <!-- closes faculty form-->
+         </div> <!-- closes the fields inside the forms -->
+    </div><!--closes row for the form-->
+            
 
 <br>
 
-<h2>Path Generation Form</h2>
-<p>Please enter your information below to generate a new path</p>
-<div class="container">
-	<form action="/faculty-form/path-step-2" method="post">
-		{% csrf_token %}
-		<div class="row">
-			<div class="col-25">
-				<label for="degree">Degree</label>
-			</div>
-			{% for radio in form.subject %}
-				<label for="{{radio.id_for_label}}">
-				<span class="radio">{{radio.tag}}</span>
-				{{radio.choice_label}}
-				</label>
-			{% endfor %}
-		</div>
-		<div class="row" id="divCSConc">
-			<div class="col-25">
-				<label for="concCS">CS Areas of Study</label>
-			</div>
-			<div class="col-75">
-				{{ form.cs_con }}
-			</div>
-		</div>
-		<div class="row" id="divISConc">
-			<div class="col-25">
-				<label for="concIS">IS Concentrations</label>
-			</div>
-			<div class="col-75">
-				{{ form.is_con }}
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-25">
-				<label for="classPerTerm">Classes per Term</label>
-			</div>
-			<div class="col-75">
-				{{ form.num }}
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-25">
-				<label for="quarter">Starting Quarter</label>
-			</div>
-			{% for radio in form.start %}
-				<label for="{{radio.id_for_label}}">
-				<span class="radio">{{radio.tag}}</span>
-				{{radio.choice_label}}
-				</label>
-			{% endfor %}
-		</div>
-		<br>
-		<div class="row">
-			<input type="submit" value="Submit">
-		</div>
-	</form>
-</div>
 
+	<div class="row"><!-- row for the header -->
+		<h2>Path Generation Form</h2>
+	</div><!-- close row for the header-->
+	<div class="row justify-content-start"><!-- row for the form -->
+		<div class="col-sm-9"><!-- col for the fields inside form -->
+			<p>Please enter your information below to generate a new path</p>
+			<form action="/student-form/path-step-2" method="post">
+				{% csrf_token %}
+				<div class="row"><!-- nested row for the degree -->
+					<div class="col align-self-start"><!-- col for the degree label -->
+						<label for="degree">Degree</label>
+					</div><!-- close col for the degree label-->
+					<div class="col align-self-end"><!-- col for the degree radio buttons -->
+						{% for radio in form.subject %}
+							<label for="{{radio.id_for_label}}">
+								<span class="radio">{{radio.tag}}</span>
+								{{radio.choice_label}}
+							</label>
+						{% endfor %}
+					</div><!-- close col for the degree radio buttons -->
+				</div><!-- close nested row for the degree -->
+				<br>
+				<div class="row" id="divCSConc"><!-- nested row for the CS areas of study -->
+					<div class="col align-self-start"><!-- col for the CS areas of study label -->
+						<label for="concCS">CS Areas of Study</label>
+					</div><!-- close col for the label -->
+					<div class="col align-self-end"><!-- col for the CS areas of study dropdown -->
+						{{ form.cs_con }}
+					</div><!-- close col for the CS areas of study dropdown -->
+				</div><!-- close nested row for CS areas of study -->
+				<br>
+				<div class="row" id="divISConc"	><!-- nested row for the IS concentrations -->
+					<div class="col align-self-start"><!-- col for the IS concentrations label -->
+						<label for="concIS">IS Concentrations</label>
+					</div><!-- close col for the IS concentrations label -->
+					<div class="col align-self-end"><!-- col for the IS concentrations dropdown -->
+						{{ form.is_con }}
+					</div><!-- close col for the IS concentrations dropdown -->
+				</div><!-- close nested row for IS concentrations -->
+				<br>
+				<div class="row"><!-- nested row for the classes per term dropdown -->
+					<div class="col align-self-start"><!-- col for classes per term label -->
+						<label for="classPerTerm">Classes per Term</label>
+					</div><!-- close col for classes per term label -->
+					<div class="col align-self-end"><!-- col for classes per term dropdown-->
+						{{ form.num }}
+					</div><!-- close col for classes per term dropdown -->
+				</div><!-- close nested row for classes per term dropdown -->
+				<br>
+				<div class="row"><!-- nested row for starting quarter radio -->
+					<div class="col align-self-start"><!-- col for starting quarter label -->
+						<label for="quarter">Starting Quarter</label>
+					</div><!-- close col for starting quarter label -->
+					<div class="col align-self-end"><!-- col for starting quarter radio -->
+						{% for radio in form.start %}
+							<label for="{{radio.id_for_label}}">
+								<span class="radio">{{radio.tag}}</span>
+								{{radio.choice_label}}
+							</label>
+						{% endfor %}
+						</div><!-- close col for starting quarter radio -->
+				</div><!-- close nested row for starting quarter radio -->
+				<br>
+				<div class="row"><!-- nested row for submit button -->
+					<div class="col align-self-start"><!-- col for submit button -->
+						<input type="submit" class="btn btn-primary" value="Submit">
+					</div><!-- close col for submit button -->
+				</div><!-- close nested row for submit button -->
+			</form>
+		</div><!-- close col for fields inside form -->
+	</div><!-- close row for the form -->
+</div><!-- close container-fluid -->
 </body>
 
 {% endblock content %}
