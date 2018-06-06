@@ -19,7 +19,7 @@ Docker containers have been set up for our app and database. Docker has tons of 
 upon initial setup, run
 
 ```
-make docker 
+make build 
 ```
 This will create our app and database containers. this will take a couple minutes. Once this has been completed run
 
