@@ -28,7 +28,7 @@ def string_to_path(start,string):
         try:
             courses.append(Course.objects.get(course_id=int(course)))
         except:
-            course.append("empty")
+            courses.append("empty")
         if len(courses) == num:
             path.append(Term(seasons[index],courses))
             term_num += 1

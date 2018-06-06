@@ -8,6 +8,6 @@ class IndexView(TemplateView):
 
     template_name = "planner/planner_index.html"
 
-        @method_decorator(login_required)
-        def dispatch(self,*args, **kwargs):
-            return super().dispatch(*args, **kwargs)
+    @method_decorator(login_required)
+    def dispatch(self,*args, **kwargs):
+        return super().dispatch(*args, **kwargs)

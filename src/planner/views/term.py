@@ -4,6 +4,9 @@ defines a class to hold course objects for use in a path
 contains a name and a list of courses
 '''
 from planner.models import Course
+import logging
+
+logger = logging.getLogger(__name__)
 
 class Term():
 
@@ -16,13 +19,12 @@ class Term():
 
     def to_string(self):
         to_return = ""
-        with open('temp.txt','w') as outfile:
-            for course in self.courses:
-                outfile.write(str(course.course_id))
-                try:
-                    to_return += course.course_id + ";"
-                except:
-                    to_return += "empty;"
+        for course in self.courses:
+
+            try:
+                to_return += course.course_id + ";"
+            except:
+                to_return += "empty;"
         return to_return
 
     def fill_empty(self,num):
