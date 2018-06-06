@@ -3,13 +3,13 @@
 {% block content %}
 
 <div class="container-fluid"><!-- container for the page -->
-	<form action="/student-form/path-display" method="post"></form>
 	<div class="row"><!-- row for the header -->
 		<h2>Path Step 2</h2>
 	</div><!-- close row for the header -->
 	<div class="row"><!-- row for the form -->
 		<div class="col-sm-9"><!-- col for the fields inside form -->
 			<p>Please select {{reqnum}} electives for your concentration or area of study</p>
+			<form action="/student-form/path-display" method="post">
 				{% csrf_token %}
 				<div class="row"><!-- nested row for elective 1 -->
 					<div class="col self-align-start"><!-- col for elective 1 label -->
@@ -74,54 +74,63 @@
 				</div><!-- close nested row for elective 7 -->
 				{% endif %}
 
+				<br>
+				
+				<div class="row"><!-- nested row for electives guidelines header -->
+					<p><h3>Guidelines for Elective Selection</h3></p>
+				</div><!-- close nested row for electives guideless header -->
+				<div class="row"><!-- nested row for electives guidelines content -->
+					<ul>
+						<li>Enter the ID number of the class you wish to take
+						<li>If the course is part of a series of courses you must also choose it's prerequisite
+						<li>If the prerequisite for a course you choose is in this list, you must also take that course
+						<li>You must choose a course for every input box
+					</ul>
+				</div><!-- close nested row for electives guideless content-->
+
+				<br>
+
+				{% if courses %}
+				<div class="row"><!-- nested row for table -->
+					<table>
+						<thead>
+							<td><b>ID</b>
+							<td><b>Course Number</b>
+							<td><b>Name</b>
+							<td><b>Description</b>
+							<td><b>Required Prerequisites</b>
+						</thead>
+						{% for course in courses %}
+						<tr>
+							<td>{{course.course_id}}
+							<td>{{course.subject}} {{course.number}}
+							<td>{{course.name}}
+							<td>{{course.description}}
+							<td>{{course.prereqs}}
+						</tr>
+						{% endfor %}
+					</table>
+				</div><!-- close nested row for table -->
+				{% else %}
+				<div class="row"><!-- nested row for table exception -->
+					<p> No courses available for display </p>
+				</div><!-- close nested row for table exception -->
+				{% endif %}
+
+				<br>
+
+				<div class = "row">
+					<input type="submit" value="Finish">
+				</div>
+			</form>
 		</div><!-- close col for fields inside form -->
 	</div><!-- close row for the form -->
 
-	<br>
-
-	<p><h3>Guidelines for Elective Selection</h3></p>
-	<ul>
-		<li>Enter the ID number of the class you wish to take
-		<li>If the course is part of a series of courses you must also choose it's prerequisite
-		<li>If the prerequisite for a course you choose is in this list, you must also take that course
-		<li>You must choose a course for every input box
-	</ul>
-	<br>
-	<div>
-		{% if courses %}
-		<table>
-			<thead>
-				<td><b>ID</b>
-				<td><b>Course Number</b>
-				<td><b>Name</b>
-				<td><b>Description</b>
-				<td><b>Required Prerequisites</b>
-			</thead>
-		{% for course in courses %}
-			<tr>
-				<td>{{course.course_id}}
-				<td>{{course.subject}} {{course.number}}
-				<td>{{course.name}}
-				<td>{{course.description}}
-				<td>{{course.prereqs}}
-			</tr>
-		{% endfor %}
-		</table>
-		{% else %}
-			<p> No courses available for display </p>
-		{% endif %}
-	</div>
-
-	<br>
-	<div class = "row">
-			<input type="submit" value="Finish">
-	</form>
 	<form action="/student-form">
 			<input type="submit" value="Back">
 	</form>
 	
 	
-	</div>
 </div>
 
 {% endblock content %}
