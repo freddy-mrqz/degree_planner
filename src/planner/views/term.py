@@ -20,7 +20,7 @@ class Term():
     def to_string(self):
         to_return = ""
         for course in self.courses:
-
+            raise Exception("Course is {}".format(course.course_id))
             try:
                 to_return += course.course_id + ";"
             except:
