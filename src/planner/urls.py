@@ -35,7 +35,7 @@ urlpatterns = [
     re_path(r'^search/$', course.search, name='search' ),
     url(r'login/$', auth_views.login, {'template_name' : 'planner/user_login_page.html'}, name='login'),
     url(r'logout/$', auth_views.logout),
-    path('student-form', StudentForm.as_view(), name='student-form'),
+    path('student-form/', StudentForm.as_view(), name='student-form'),
     path('faculty-form', FacultyForm.as_view(), name='faculty-form'),
     path('student-form/path-step-2', StudentStep2.as_view()),
     path('student-form/path-display', StudentFinish.as_view()),
